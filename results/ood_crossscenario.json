@@ -1,0 +1,7833 @@
+{
+  "directions": [
+    {
+      "name": "Dir1_1r3_to_5m6r",
+      "train": [
+        "1r",
+        "3"
+      ],
+      "test": [
+        "5m",
+        "6r"
+      ]
+    },
+    {
+      "name": "Dir2_5m6r_to_1r3",
+      "train": [
+        "5m",
+        "6r"
+      ],
+      "test": [
+        "1r",
+        "3"
+      ]
+    }
+  ],
+  "m_grid": [
+    0,
+    1000,
+    2000,
+    5000,
+    10000,
+    20000,
+    50000,
+    100000
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "noise_models": [
+    "resampled",
+    "synthetic"
+  ],
+  "partition_transfer_check": {
+    "1r": {
+      "DeleteConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "DuplicateEdgeRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ExecutionConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "MissingNodeRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "NetworkConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ParentChildTemporalRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ProcessActivityTemporalRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SelfLoopRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SequenceGapRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SpawnConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "TimestampRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      }
+    },
+    "3": {
+      "DeleteConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "DuplicateEdgeRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ExecutionConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "MissingNodeRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "NetworkConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ParentChildTemporalRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ProcessActivityTemporalRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SelfLoopRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SequenceGapRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SpawnConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "TimestampRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      }
+    },
+    "5m": {
+      "DeleteConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "DuplicateEdgeRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ExecutionConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "MissingNodeRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "NetworkConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ParentChildTemporalRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ProcessActivityTemporalRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SelfLoopRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SequenceGapRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SpawnConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "TimestampRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      }
+    },
+    "6r": {
+      "DeleteConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "DuplicateEdgeRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ExecutionConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "MissingNodeRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "NetworkConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ParentChildTemporalRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "ProcessActivityTemporalRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SelfLoopRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SequenceGapRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "SpawnConsistencyRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      },
+      "TimestampRule": {
+        "violation_count": 0,
+        "total_edges": 1,
+        "violation_rate": 0.0,
+        "transferred": true,
+        "status": "TRANSFERRED"
+      }
+    }
+  },
+  "alpha_fits": [
+    {
+      "alpha_hat": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 0,
+      "direction": "Dir1_1r3_to_5m6r",
+      "detector": "gated_sage",
+      "noise_model": "resampled"
+    },
+    {
+      "alpha_hat": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 0,
+      "direction": "Dir1_1r3_to_5m6r",
+      "detector": "gated_sage",
+      "noise_model": "synthetic"
+    },
+    {
+      "alpha_hat": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 0,
+      "direction": "Dir1_1r3_to_5m6r",
+      "detector": "graphsage_baseline",
+      "noise_model": "resampled"
+    },
+    {
+      "alpha_hat": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 0,
+      "direction": "Dir1_1r3_to_5m6r",
+      "detector": "graphsage_baseline",
+      "noise_model": "synthetic"
+    },
+    {
+      "alpha_hat": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 0,
+      "direction": "Dir2_5m6r_to_1r3",
+      "detector": "gated_sage",
+      "noise_model": "resampled"
+    },
+    {
+      "alpha_hat": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 0,
+      "direction": "Dir2_5m6r_to_1r3",
+      "detector": "gated_sage",
+      "noise_model": "synthetic"
+    },
+    {
+      "alpha_hat": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 0,
+      "direction": "Dir2_5m6r_to_1r3",
+      "detector": "graphsage_baseline",
+      "noise_model": "resampled"
+    },
+    {
+      "alpha_hat": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 0,
+      "direction": "Dir2_5m6r_to_1r3",
+      "detector": "graphsage_baseline",
+      "noise_model": "synthetic"
+    }
+  ],
+  "sweep_results": [
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 1000,
+      "tp": 0,
+      "fp": 13,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 2000,
+      "tp": 0,
+      "fp": 11,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 5000,
+      "tp": 0,
+      "fp": 14,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 10000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 20000,
+      "tp": 0,
+      "fp": 12,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 50000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 100000,
+      "tp": 0,
+      "fp": 16,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 1000,
+      "tp": 0,
+      "fp": 20,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 2000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 5000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 10000,
+      "tp": 0,
+      "fp": 16,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 20000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 50000,
+      "tp": 0,
+      "fp": 19,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 100000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 1000,
+      "tp": 0,
+      "fp": 19,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 2000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 5000,
+      "tp": 0,
+      "fp": 12,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 10000,
+      "tp": 0,
+      "fp": 18,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 20000,
+      "tp": 0,
+      "fp": 12,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 50000,
+      "tp": 0,
+      "fp": 13,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 100000,
+      "tp": 0,
+      "fp": 19,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 1000,
+      "tp": 0,
+      "fp": 18,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 2000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 5000,
+      "tp": 0,
+      "fp": 13,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 10000,
+      "tp": 0,
+      "fp": 16,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 20000,
+      "tp": 0,
+      "fp": 11,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 50000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 100000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 1000,
+      "tp": 0,
+      "fp": 16,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 2000,
+      "tp": 0,
+      "fp": 12,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 5000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 10000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 20000,
+      "tp": 0,
+      "fp": 13,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 50000,
+      "tp": 0,
+      "fp": 14,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir1_1r3_to_5m6r",
+      "train_scenarios": [
+        "1r",
+        "3"
+      ],
+      "test_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 100000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 0,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 1000,
+      "tp": 0,
+      "fp": 13,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 2000,
+      "tp": 0,
+      "fp": 11,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 5000,
+      "tp": 0,
+      "fp": 14,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 10000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 20000,
+      "tp": 0,
+      "fp": 12,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 50000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 0,
+      "m": 100000,
+      "tp": 0,
+      "fp": 16,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 1,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 1000,
+      "tp": 0,
+      "fp": 20,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 2000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 5000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 10000,
+      "tp": 0,
+      "fp": 16,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 20000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 50000,
+      "tp": 0,
+      "fp": 19,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 1,
+      "m": 100000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 2,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 1000,
+      "tp": 0,
+      "fp": 19,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 2000,
+      "tp": 0,
+      "fp": 17,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 5000,
+      "tp": 0,
+      "fp": 12,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 10000,
+      "tp": 0,
+      "fp": 18,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 20000,
+      "tp": 0,
+      "fp": 12,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 50000,
+      "tp": 0,
+      "fp": 13,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 2,
+      "m": 100000,
+      "tp": 0,
+      "fp": 19,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 3,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 1000,
+      "tp": 0,
+      "fp": 18,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 2000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 5000,
+      "tp": 0,
+      "fp": 13,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 10000,
+      "tp": 0,
+      "fp": 16,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 20000,
+      "tp": 0,
+      "fp": 11,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 50000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 3,
+      "m": 100000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "resampled",
+      "seed": 4,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 1000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 1000,
+      "tp": 0,
+      "fp": 16,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 2000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 2000,
+      "tp": 0,
+      "fp": 12,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 5000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 5000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 10000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 10000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 20000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 20000,
+      "tp": 0,
+      "fp": 13,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 50000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 50000,
+      "tp": 0,
+      "fp": 14,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "graphsage_baseline",
+      "detector_name": "GraphSAGE (ungated baseline)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 100000,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "direction": "Dir2_5m6r_to_1r3",
+      "train_scenarios": [
+        "5m",
+        "6r"
+      ],
+      "test_scenarios": [
+        "1r",
+        "3"
+      ],
+      "detector": "gated_sage",
+      "detector_name": "Feasibility-gated GraphSAGE (ours)",
+      "noise_model": "synthetic",
+      "seed": 4,
+      "m": 100000,
+      "tp": 0,
+      "fp": 15,
+      "fn": 2,
+      "poison_edges": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ]
+}

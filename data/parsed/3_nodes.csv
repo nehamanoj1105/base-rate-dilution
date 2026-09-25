@@ -1,0 +1,3 @@
+node_id,node_type,process_name,timestamp,file_path
+n1,process,bash,1000,
+n2,file,,1001,/etc/passwd

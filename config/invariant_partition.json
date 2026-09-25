@@ -1,0 +1,38 @@
+{
+  "canonical_rule_order": [
+    "DuplicateEdgeRule",
+    "DuplicateEventRule",
+    "SpawnConsistencyRule",
+    "ExecutionConsistencyRule",
+    "ReadWriteConsistencyRule",
+    "NetworkConsistencyRule",
+    "DeleteConsistencyRule",
+    "SelfLoopRule",
+    "MissingNodeRule",
+    "TimestampRule",
+    "UnspawnedProcessRule",
+    "SequenceGapRule",
+    "ParentChildTemporalRule",
+    "ProcessActivityTemporalRule",
+    "SequenceMonotonicityRule"
+  ],
+  "hard_rules": [
+    "DeleteConsistencyRule",
+    "DuplicateEdgeRule",
+    "ExecutionConsistencyRule",
+    "MissingNodeRule",
+    "NetworkConsistencyRule",
+    "ParentChildTemporalRule",
+    "ProcessActivityTemporalRule",
+    "SelfLoopRule",
+    "SequenceGapRule",
+    "SpawnConsistencyRule",
+    "TimestampRule"
+  ],
+  "soft_rules": [
+    "DuplicateEventRule",
+    "ReadWriteConsistencyRule",
+    "SequenceMonotonicityRule",
+    "UnspawnedProcessRule"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "train_seeds": [0, 1, 2],
+  "val_seeds": [3],
+  "test_seeds": [4],
+  "resampler_pool_seeds": [5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009],
+  "provenance": {
+    "invariant_partition_dataset": "TRAIN/VAL evaluation",
+    "threshold_calibration": "VAL at m=0 only, then frozen",
+    "test_evaluation": "TEST evaluated using frozen threshold calibrated on VAL at m=0"
+  }
+}

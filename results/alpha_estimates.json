@@ -1,0 +1,207 @@
+{
+  "rule_hard": {
+    "detector_name": "Rule-only (HARD set)",
+    "fit": {
+      "alpha_hat": -0.0,
+      "ci_lower": -0.0,
+      "ci_upper": 0.0,
+      "r_squared": 1.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 35
+    },
+    "baseline_params": {
+      "p_tpr": 0.133333,
+      "q_fpr": 0.0,
+      "k": 15,
+      "n": 585
+    },
+    "theoretical_curve": {
+      "m": [
+        0,
+        1000,
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000
+      ],
+      "precision_pred": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "rule_all": {
+    "detector_name": "Rule-only (all 15 rules)",
+    "fit": {
+      "alpha_hat": -0.0,
+      "ci_lower": -0.0,
+      "ci_upper": 0.0,
+      "r_squared": 0.0,
+      "intercept": -0.275865,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 35
+    },
+    "baseline_params": {
+      "p_tpr": 0.586667,
+      "q_fpr": 0.240699,
+      "k": 15,
+      "n": 585
+    },
+    "theoretical_curve": {
+      "m": [
+        0,
+        1000,
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000
+      ],
+      "precision_pred": [
+        0.05882,
+        0.022546,
+        0.011712,
+        0.006504,
+        0.003442,
+        0.001427,
+        0.000722,
+        0.000363
+      ]
+    }
+  },
+  "graphsage_baseline": {
+    "detector_name": "GraphSAGE (ungated baseline)",
+    "fit": {
+      "alpha_hat": 0.987449,
+      "ci_lower": 0.936625,
+      "ci_upper": 1.037078,
+      "r_squared": 0.948871,
+      "intercept": 0.816369,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 35
+    },
+    "baseline_params": {
+      "p_tpr": 0.333333,
+      "q_fpr": 0.539652,
+      "k": 15,
+      "n": 585
+    },
+    "theoretical_curve": {
+      "m": [
+        0,
+        1000,
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000
+      ],
+      "precision_pred": [
+        0.015591,
+        0.005812,
+        0.002994,
+        0.001656,
+        0.000875,
+        0.000362,
+        0.000183,
+        9.2e-05
+      ]
+    }
+  },
+  "graphsage_inv_features": {
+    "detector_name": "GraphSAGE + invariant features (ungated)",
+    "fit": {
+      "alpha_hat": 1.580696,
+      "ci_lower": 0.998573,
+      "ci_upper": 2.162784,
+      "r_squared": 0.40266,
+      "intercept": 3.932735,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 35
+    },
+    "baseline_params": {
+      "p_tpr": 0.026667,
+      "q_fpr": 0.0,
+      "k": 15,
+      "n": 585
+    },
+    "theoretical_curve": {
+      "m": [
+        0,
+        1000,
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000
+      ],
+      "precision_pred": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "gated_sage": {
+    "detector_name": "Feasibility-gated GraphSAGE (ours)",
+    "fit": {
+      "alpha_hat": -0.0,
+      "ci_lower": -0.0,
+      "ci_upper": 0.0,
+      "r_squared": 1.0,
+      "intercept": 0.0,
+      "fitted_m_min": 1000,
+      "fitted_m_max": 100000,
+      "n_samples": 35
+    },
+    "baseline_params": {
+      "p_tpr": 0.133333,
+      "q_fpr": 0.0,
+      "k": 15,
+      "n": 585
+    },
+    "theoretical_curve": {
+      "m": [
+        0,
+        1000,
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000
+      ],
+      "precision_pred": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  }
+}

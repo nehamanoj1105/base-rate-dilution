@@ -1,0 +1,3 @@
+detector,noise_model,m,seed,base_graph_edges,noise_edges,total_edges,poison_edges,base_rate,tp,fp,tn,fn,precision,recall,f1,roc_auc,pr_auc,false_positive_rate,threshold_used,flagged_edges_count,runtime_sec,peak_mem_mb
+Rule-only (all 15 rules),synthetic,0,42,200,0,200,8,0.04,4,1,193,4,0.8,0.5,0.615385,0.830756,0.738333,0.005155,0.5,5,1.1e-05,0.0509
+Rule-only (all 15 rules),synthetic,140,42,200,140,340,8,0.02352941,5,191,143,3,0.02551,0.625,0.04902,0.630739,0.430892,0.571856,0.5,196,0.010573,0.2191

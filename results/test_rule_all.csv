@@ -1,0 +1,6 @@
+detector,noise_model,m,seed,base_graph_edges,noise_edges,total_edges,poison_edges,base_rate,tp,fp,tn,fn,precision,recall,f1,roc_auc,pr_auc,false_positive_rate,threshold_used,flagged_edges_count,runtime_sec,peak_mem_mb
+Rule-only (all 15 rules),synthetic,0,42,234,0,234,20,0.08547009,9,2,217,11,0.818182,0.45,0.580645,0.795434,0.721911,0.009132,0.5,11,5e-06,0.2507
+Rule-only (all 15 rules),synthetic,0,0,234,0,234,20,0.08547009,9,1,218,11,0.9,0.45,0.6,0.797717,0.762821,0.004566,0.5,10,1.8e-05,0.0367
+Rule-only (all 15 rules),synthetic,0,1,234,0,234,20,0.08547009,11,5,214,9,0.6875,0.55,0.611111,0.855251,0.718964,0.022831,0.5,16,1.7e-05,0.0359
+Rule-only (all 15 rules),synthetic,0,2,234,0,234,20,0.08547009,10,3,216,10,0.769231,0.5,0.606061,0.826484,0.728632,0.013699,0.5,13,2e-05,0.0361
+Rule-only (all 15 rules),synthetic,0,3,234,0,234,20,0.08547009,12,5,214,8,0.705882,0.6,0.648649,0.888584,0.759351,0.022831,0.5,17,1.9e-05,0.0358

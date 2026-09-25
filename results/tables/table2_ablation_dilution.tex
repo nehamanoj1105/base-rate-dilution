@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\caption{Dilution Exponent ($\hat{\alpha}$) and Precision Stability Across Detector Configurations.}
+\label{tab:ablation_dilution}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Detector Configuration} & \textbf{Noise Model} & \textbf{Fitted $\hat{\alpha}$} & \textbf{95\% Bootstrap CI} & \textbf{$R^2$} \\
+\midrule
+Rule-only (HARD set) & Resampled & \textbf{-0.0000} & [-0.0000, 0.0000] & 1.0000 \\
+Rule-only (all 15 rules) & Resampled & \textbf{0.0000} & [-0.0000, 0.0000] & 0.0000 \\
+GraphSAGE (ungated baseline) & Resampled & \textbf{0.9888} & [0.9364, 1.0388] & 0.9487 \\
+GraphSAGE + invariant features (ungated) & Resampled & \textbf{1.5807} & [0.9986, 2.1628] & 0.4027 \\
+Feasibility-gated GraphSAGE (ours) & Resampled & \textbf{-0.0000} & [-0.0000, 0.0000] & 1.0000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

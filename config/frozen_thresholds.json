@@ -1,0 +1,18 @@
+{
+  "provenance": {
+    "calibration_seed": 0,
+    "calibration_split": "VAL (m=0 synthetic provenance graph)",
+    "timestamp": "2026-09-21T18:55:00Z",
+    "git_commit": "d8b8617c4478846ace3b82dbd9fb819c8e2f6a64",
+    "protocol": "Calibrated ONCE on m=0 validation split using seed 0; frozen for all seeds and dilution volumes m"
+  },
+  "thresholds": {
+    "rule_hard": 0.5,
+    "rule_all": 0.5,
+    "rule_engine": 0.5,
+    "graphsage_baseline": 0.6,
+    "graphsage": 0.6,
+    "graphsage_inv_features": 0.6,
+    "gated_sage": 0.05
+  }
+}

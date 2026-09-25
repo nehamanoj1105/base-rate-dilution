@@ -1,0 +1,938 @@
+{
+  "comparison_table": [
+    {
+      "rule": "DeleteConsistencyRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.026,
+      "gap_synthetic": 0.026,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "DuplicateEdgeRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.0,
+      "gap_synthetic": 0.0,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "DuplicateEventRule",
+      "benign_rate": 0.009295499021526418,
+      "synthetic_noise_rate": 0.0,
+      "gap_synthetic": -0.009295499021526418,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": -0.009295499021526418
+    },
+    {
+      "rule": "ExecutionConsistencyRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.028333333333333332,
+      "gap_synthetic": 0.028333333333333332,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "MissingNodeRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.0,
+      "gap_synthetic": 0.0,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "NetworkConsistencyRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.027142857142857142,
+      "gap_synthetic": 0.027142857142857142,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "ParentChildTemporalRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.15214285714285714,
+      "gap_synthetic": 0.15214285714285714,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "ProcessActivityTemporalRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.35333333333333333,
+      "gap_synthetic": 0.35333333333333333,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "ReadWriteConsistencyRule",
+      "benign_rate": 0.007827788649706457,
+      "synthetic_noise_rate": 0.052333333333333336,
+      "gap_synthetic": 0.04450554468362688,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": -0.007827788649706457
+    },
+    {
+      "rule": "SelfLoopRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.0,
+      "gap_synthetic": 0.0,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "SequenceGapRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.0,
+      "gap_synthetic": 0.0,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "SequenceMonotonicityRule",
+      "benign_rate": 0.6366748166259169,
+      "synthetic_noise_rate": 0.7736666666666666,
+      "gap_synthetic": 0.13699185004074976,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": -0.6366748166259169
+    },
+    {
+      "rule": "SpawnConsistencyRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.07766666666666666,
+      "gap_synthetic": 0.07766666666666666,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "TimestampRule",
+      "benign_rate": 0.0,
+      "synthetic_noise_rate": 0.0,
+      "gap_synthetic": 0.0,
+      "resampled_noise_rate": 0.0,
+      "gap_resampled": 0.0
+    },
+    {
+      "rule": "UnspawnedProcessRule",
+      "benign_rate": 0.002446183953033268,
+      "synthetic_noise_rate": 0.0,
+      "gap_synthetic": -0.002446183953033268,
+      "resampled_noise_rate": 0.01301775147928994,
+      "gap_resampled": 0.010571567526256672
+    }
+  ],
+  "synthetic_noise_detail": [
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "DuplicateEdgeRule",
+      "total_noise_edges": 600,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "DuplicateEventRule",
+      "total_noise_edges": 600,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "SpawnConsistencyRule",
+      "total_noise_edges": 600,
+      "num_violations": 46,
+      "num_edges_flagged": 33,
+      "violation_rate": 0.055
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "ExecutionConsistencyRule",
+      "total_noise_edges": 600,
+      "num_violations": 23,
+      "num_edges_flagged": 17,
+      "violation_rate": 0.028333333333333332
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "ReadWriteConsistencyRule",
+      "total_noise_edges": 600,
+      "num_violations": 30,
+      "num_edges_flagged": 24,
+      "violation_rate": 0.04
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "NetworkConsistencyRule",
+      "total_noise_edges": 600,
+      "num_violations": 23,
+      "num_edges_flagged": 12,
+      "violation_rate": 0.02
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "DeleteConsistencyRule",
+      "total_noise_edges": 600,
+      "num_violations": 20,
+      "num_edges_flagged": 13,
+      "violation_rate": 0.021666666666666667
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "SelfLoopRule",
+      "total_noise_edges": 600,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "MissingNodeRule",
+      "total_noise_edges": 600,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "TimestampRule",
+      "total_noise_edges": 600,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "UnspawnedProcessRule",
+      "total_noise_edges": 600,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "SequenceGapRule",
+      "total_noise_edges": 600,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "ParentChildTemporalRule",
+      "total_noise_edges": 600,
+      "num_violations": 80,
+      "num_edges_flagged": 80,
+      "violation_rate": 0.13333333333333333
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "ProcessActivityTemporalRule",
+      "total_noise_edges": 600,
+      "num_violations": 212,
+      "num_edges_flagged": 212,
+      "violation_rate": 0.35333333333333333
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "light",
+      "rule_name": "SequenceMonotonicityRule",
+      "total_noise_edges": 600,
+      "num_violations": 420,
+      "num_edges_flagged": 376,
+      "violation_rate": 0.6266666666666667
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "DuplicateEdgeRule",
+      "total_noise_edges": 1400,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "DuplicateEventRule",
+      "total_noise_edges": 1400,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "SpawnConsistencyRule",
+      "total_noise_edges": 1400,
+      "num_violations": 119,
+      "num_edges_flagged": 93,
+      "violation_rate": 0.06642857142857143
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "ExecutionConsistencyRule",
+      "total_noise_edges": 1400,
+      "num_violations": 39,
+      "num_edges_flagged": 32,
+      "violation_rate": 0.022857142857142857
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "ReadWriteConsistencyRule",
+      "total_noise_edges": 1400,
+      "num_violations": 77,
+      "num_edges_flagged": 57,
+      "violation_rate": 0.04071428571428572
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "NetworkConsistencyRule",
+      "total_noise_edges": 1400,
+      "num_violations": 67,
+      "num_edges_flagged": 38,
+      "violation_rate": 0.027142857142857142
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "DeleteConsistencyRule",
+      "total_noise_edges": 1400,
+      "num_violations": 43,
+      "num_edges_flagged": 32,
+      "violation_rate": 0.022857142857142857
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "SelfLoopRule",
+      "total_noise_edges": 1400,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "MissingNodeRule",
+      "total_noise_edges": 1400,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "TimestampRule",
+      "total_noise_edges": 1400,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "UnspawnedProcessRule",
+      "total_noise_edges": 1400,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "SequenceGapRule",
+      "total_noise_edges": 1400,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "ParentChildTemporalRule",
+      "total_noise_edges": 1400,
+      "num_violations": 213,
+      "num_edges_flagged": 213,
+      "violation_rate": 0.15214285714285714
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "ProcessActivityTemporalRule",
+      "total_noise_edges": 1400,
+      "num_violations": 470,
+      "num_edges_flagged": 470,
+      "violation_rate": 0.3357142857142857
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "medium",
+      "rule_name": "SequenceMonotonicityRule",
+      "total_noise_edges": 1400,
+      "num_violations": 1154,
+      "num_edges_flagged": 1002,
+      "violation_rate": 0.7157142857142857
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "DuplicateEdgeRule",
+      "total_noise_edges": 3000,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "DuplicateEventRule",
+      "total_noise_edges": 3000,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "SpawnConsistencyRule",
+      "total_noise_edges": 3000,
+      "num_violations": 261,
+      "num_edges_flagged": 233,
+      "violation_rate": 0.07766666666666666
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "ExecutionConsistencyRule",
+      "total_noise_edges": 3000,
+      "num_violations": 90,
+      "num_edges_flagged": 67,
+      "violation_rate": 0.022333333333333334
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "ReadWriteConsistencyRule",
+      "total_noise_edges": 3000,
+      "num_violations": 207,
+      "num_edges_flagged": 157,
+      "violation_rate": 0.052333333333333336
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "NetworkConsistencyRule",
+      "total_noise_edges": 3000,
+      "num_violations": 119,
+      "num_edges_flagged": 77,
+      "violation_rate": 0.025666666666666667
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "DeleteConsistencyRule",
+      "total_noise_edges": 3000,
+      "num_violations": 100,
+      "num_edges_flagged": 78,
+      "violation_rate": 0.026
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "SelfLoopRule",
+      "total_noise_edges": 3000,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "MissingNodeRule",
+      "total_noise_edges": 3000,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "TimestampRule",
+      "total_noise_edges": 3000,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "UnspawnedProcessRule",
+      "total_noise_edges": 3000,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "SequenceGapRule",
+      "total_noise_edges": 3000,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "ParentChildTemporalRule",
+      "total_noise_edges": 3000,
+      "num_violations": 402,
+      "num_edges_flagged": 402,
+      "violation_rate": 0.134
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "ProcessActivityTemporalRule",
+      "total_noise_edges": 3000,
+      "num_violations": 1049,
+      "num_edges_flagged": 1049,
+      "violation_rate": 0.3496666666666667
+    },
+    {
+      "source": "synthetic_noise",
+      "strength": "heavy",
+      "rule_name": "SequenceMonotonicityRule",
+      "total_noise_edges": 3000,
+      "num_violations": 2770,
+      "num_edges_flagged": 2321,
+      "violation_rate": 0.7736666666666666
+    }
+  ],
+  "resampled_noise_detail": [
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "DuplicateEdgeRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "DuplicateEventRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "SpawnConsistencyRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "ExecutionConsistencyRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "ReadWriteConsistencyRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "NetworkConsistencyRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "DeleteConsistencyRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "SelfLoopRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "MissingNodeRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "TimestampRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "UnspawnedProcessRule",
+      "total_noise_edges": 2535,
+      "num_violations": 33,
+      "num_edges_flagged": 33,
+      "violation_rate": 0.01301775147928994
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "SequenceGapRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "ParentChildTemporalRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "ProcessActivityTemporalRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=100",
+      "rule_name": "SequenceMonotonicityRule",
+      "total_noise_edges": 2535,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "DuplicateEdgeRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "DuplicateEventRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "SpawnConsistencyRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "ExecutionConsistencyRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "ReadWriteConsistencyRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "NetworkConsistencyRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "DeleteConsistencyRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "SelfLoopRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "MissingNodeRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "TimestampRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "UnspawnedProcessRule",
+      "total_noise_edges": 11258,
+      "num_violations": 39,
+      "num_edges_flagged": 39,
+      "violation_rate": 0.003464203233256351
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "SequenceGapRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "ParentChildTemporalRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "ProcessActivityTemporalRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=500",
+      "rule_name": "SequenceMonotonicityRule",
+      "total_noise_edges": 11258,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "DuplicateEdgeRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "DuplicateEventRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "SpawnConsistencyRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "ExecutionConsistencyRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "ReadWriteConsistencyRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "NetworkConsistencyRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "DeleteConsistencyRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "SelfLoopRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "MissingNodeRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "TimestampRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "UnspawnedProcessRule",
+      "total_noise_edges": 22389,
+      "num_violations": 39,
+      "num_edges_flagged": 39,
+      "violation_rate": 0.001741926839072759
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "SequenceGapRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "ParentChildTemporalRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "ProcessActivityTemporalRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "source": "resampled_noise",
+      "strength": "m=1000",
+      "rule_name": "SequenceMonotonicityRule",
+      "total_noise_edges": 22389,
+      "num_violations": 0,
+      "num_edges_flagged": 0,
+      "violation_rate": 0.0
+    }
+  ]
+}

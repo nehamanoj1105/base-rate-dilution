@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Causal Provenance Tamper Detection - Experimental Artifact Manifest",
+    "git_commit": "d8b8617c4478846ace3b82dbd9fb819c8e2f6a64",
+    "timestamp": "2026-09-23T18:13:57Z",
+    "environment": {
+      "python_version": "3.14.4",
+      "pytorch_version": "2.13.0+cpu",
+      "pyg_version": "2.8.0.post1",
+      "platform": "linux"
+    }
+  },
+  "experiments": {
+    "noise_realism_audit": {
+      "description": "Quantifies OS-implausibility of synthetic mimicry vs resampled benign noise.",
+      "script": "scripts/run_noise_audit.py",
+      "result_file": "results/noise_audit_results.json",
+      "table": "results/tables/table1_noise_realism.tex",
+      "figure": "results/figs/noise_realism_gap.png",
+      "doc": "docs/NOISE_REALISM.md",
+      "wall_clock_seconds": 0.0
+    },
+    "gated_training": {
+      "description": "Multi-seed training and split hygiene audit of GatedSAGE.",
+      "script": "scripts/run_gated_training.py",
+      "result_file": "results/training_metrics.json",
+      "checkpoints": "results/checkpoints/",
+      "splits_manifest": "config/splits.json",
+      "wall_clock_seconds": 0.0
+    },
+    "ablation_dilution": {
+      "description": "5-detector dilution sweep across m=0..100k isolating the architectural gate.",
+      "script": "scripts/run_ablation_experiments.py",
+      "result_file": "results/ablation_dilution.csv",
+      "alpha_fits": "results/alpha_by_configuration.json",
+      "table": "results/tables/table2_ablation_dilution.tex",
+      "figures": [
+        "results/figs/ablation_precision_vs_m.png",
+        "results/figs/tradeoff_frontier.png"
+      ],
+      "doc": "docs/ABLATION.md",
+      "wall_clock_seconds": 0.0
+    },
+    "adaptive_attacker": {
+      "description": "Experiment H: Feasible attacker search over 11 HARD rules across 7 objectives.",
+      "script": "scripts/run_adaptive_attacker.py",
+      "result_file": "results/adaptive_attacker.json",
+      "table": "results/tables/table3_adaptive_adversary.tex",
+      "doc": "docs/ADAPTIVE_ADVERSARY_V2.md",
+      "wall_clock_seconds": 0.0
+    },
+    "ood_crossscenario": {
+      "description": "Experiment G: Cross-scenario generalization ({1r,3} <-> {5m,6r}) & partition transfer.",
+      "script": "scripts/run_ood_experiments.py",
+      "result_file": "results/ood_crossscenario.json",
+      "table": "results/tables/table4_ood_partition_transfer.tex",
+      "figure": "results/figs/ood_alpha.png",
+      "doc": "docs/OOD.md",
+      "wall_clock_seconds": 0.0
+    },
+    "second_domain_elliptic": {
+      "description": "Phase 12: Generality benchmark reproducing dilution on Elliptic Bitcoin graph.",
+      "script": "scripts/run_second_domain.py",
+      "result_file": "results/second_domain.json",
+      "table": "results/tables/table5_second_domain.tex",
+      "figure": "results/figs/second_domain_alpha.png",
+      "doc": "docs/SECOND_DOMAIN.md",
+      "wall_clock_seconds": 0.0
+    }
+  }
+}

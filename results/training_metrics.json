@@ -1,0 +1,676 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "per_seed_results": {
+    "0": {
+      "seed": 0,
+      "frozen_threshold": 0.05,
+      "val_metrics": {
+        "threshold": 0.05,
+        "precision": 1.0,
+        "recall": 0.363636,
+        "f1": 0.533333,
+        "accuracy": 0.988333,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.636364,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.681818,
+        "roc_auc": 0.681818,
+        "pr_auc": 0.375303,
+        "mcc": 0.599471,
+        "average_precision": 0.375303
+      },
+      "test_eval": {
+        "0": {
+          "m": 0,
+          "total_edges": 600,
+          "poison_edges": 15,
+          "class_balance": 0.025,
+          "tp": 2,
+          "fp": 0,
+          "tn": 585,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "500": {
+          "m": 500,
+          "total_edges": 12317,
+          "poison_edges": 15,
+          "class_balance": 0.001218,
+          "tp": 2,
+          "fp": 0,
+          "tn": 12302,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "1000": {
+          "m": 1000,
+          "total_edges": 24138,
+          "poison_edges": 15,
+          "class_balance": 0.000621,
+          "tp": 2,
+          "fp": 0,
+          "tn": 24123,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "2000": {
+          "m": 2000,
+          "total_edges": 48090,
+          "poison_edges": 15,
+          "class_balance": 0.000312,
+          "tp": 2,
+          "fp": 0,
+          "tn": 48075,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "5000": {
+          "m": 5000,
+          "total_edges": 120213,
+          "poison_edges": 15,
+          "class_balance": 0.000125,
+          "tp": 2,
+          "fp": 0,
+          "tn": 120198,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "10000": {
+          "m": 10000,
+          "total_edges": 237789,
+          "poison_edges": 15,
+          "class_balance": 6.3e-05,
+          "tp": 2,
+          "fp": 0,
+          "tn": 237774,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        }
+      }
+    },
+    "1": {
+      "seed": 1,
+      "frozen_threshold": 0.05,
+      "val_metrics": {
+        "threshold": 0.05,
+        "precision": 1.0,
+        "recall": 0.090909,
+        "f1": 0.166667,
+        "accuracy": 0.983333,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.909091,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.545455,
+        "roc_auc": 0.545455,
+        "pr_auc": 0.107576,
+        "mcc": 0.298984,
+        "average_precision": 0.107576
+      },
+      "test_eval": {
+        "0": {
+          "m": 0,
+          "total_edges": 600,
+          "poison_edges": 15,
+          "class_balance": 0.025,
+          "tp": 2,
+          "fp": 0,
+          "tn": 585,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "500": {
+          "m": 500,
+          "total_edges": 11960,
+          "poison_edges": 15,
+          "class_balance": 0.001254,
+          "tp": 2,
+          "fp": 0,
+          "tn": 11945,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "1000": {
+          "m": 1000,
+          "total_edges": 24366,
+          "poison_edges": 15,
+          "class_balance": 0.000616,
+          "tp": 2,
+          "fp": 0,
+          "tn": 24351,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "2000": {
+          "m": 2000,
+          "total_edges": 48324,
+          "poison_edges": 15,
+          "class_balance": 0.00031,
+          "tp": 2,
+          "fp": 0,
+          "tn": 48309,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "5000": {
+          "m": 5000,
+          "total_edges": 119394,
+          "poison_edges": 15,
+          "class_balance": 0.000126,
+          "tp": 2,
+          "fp": 0,
+          "tn": 119379,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        },
+        "10000": {
+          "m": 10000,
+          "total_edges": 239972,
+          "poison_edges": 15,
+          "class_balance": 6.3e-05,
+          "tp": 2,
+          "fp": 0,
+          "tn": 239957,
+          "fn": 13,
+          "precision": 1.0,
+          "recall": 0.133333,
+          "f1": 0.235294,
+          "threshold_used": 0.05
+        }
+      }
+    },
+    "2": {
+      "seed": 2,
+      "frozen_threshold": 0.05,
+      "val_metrics": {
+        "threshold": 0.05,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.981667,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 1.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5,
+        "roc_auc": 0.5,
+        "pr_auc": 0.018333,
+        "mcc": 0.0,
+        "average_precision": 0.018333
+      },
+      "test_eval": {
+        "0": {
+          "m": 0,
+          "total_edges": 600,
+          "poison_edges": 15,
+          "class_balance": 0.025,
+          "tp": 1,
+          "fp": 0,
+          "tn": 585,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "500": {
+          "m": 500,
+          "total_edges": 12313,
+          "poison_edges": 15,
+          "class_balance": 0.001218,
+          "tp": 1,
+          "fp": 0,
+          "tn": 12298,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "1000": {
+          "m": 1000,
+          "total_edges": 24395,
+          "poison_edges": 15,
+          "class_balance": 0.000615,
+          "tp": 1,
+          "fp": 0,
+          "tn": 24380,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "2000": {
+          "m": 2000,
+          "total_edges": 47560,
+          "poison_edges": 15,
+          "class_balance": 0.000315,
+          "tp": 1,
+          "fp": 0,
+          "tn": 47545,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "5000": {
+          "m": 5000,
+          "total_edges": 118482,
+          "poison_edges": 15,
+          "class_balance": 0.000127,
+          "tp": 1,
+          "fp": 0,
+          "tn": 118467,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "10000": {
+          "m": 10000,
+          "total_edges": 237130,
+          "poison_edges": 15,
+          "class_balance": 6.3e-05,
+          "tp": 1,
+          "fp": 0,
+          "tn": 237115,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        }
+      }
+    },
+    "3": {
+      "seed": 3,
+      "frozen_threshold": 0.05,
+      "val_metrics": {
+        "threshold": 0.05,
+        "precision": 1.0,
+        "recall": 0.090909,
+        "f1": 0.166667,
+        "accuracy": 0.983333,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.909091,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.545455,
+        "roc_auc": 0.545455,
+        "pr_auc": 0.107576,
+        "mcc": 0.298984,
+        "average_precision": 0.107576
+      },
+      "test_eval": {
+        "0": {
+          "m": 0,
+          "total_edges": 600,
+          "poison_edges": 15,
+          "class_balance": 0.025,
+          "tp": 1,
+          "fp": 0,
+          "tn": 585,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "500": {
+          "m": 500,
+          "total_edges": 12325,
+          "poison_edges": 15,
+          "class_balance": 0.001217,
+          "tp": 1,
+          "fp": 0,
+          "tn": 12310,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "1000": {
+          "m": 1000,
+          "total_edges": 24172,
+          "poison_edges": 15,
+          "class_balance": 0.000621,
+          "tp": 1,
+          "fp": 0,
+          "tn": 24157,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "2000": {
+          "m": 2000,
+          "total_edges": 47892,
+          "poison_edges": 15,
+          "class_balance": 0.000313,
+          "tp": 1,
+          "fp": 0,
+          "tn": 47877,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "5000": {
+          "m": 5000,
+          "total_edges": 120025,
+          "poison_edges": 15,
+          "class_balance": 0.000125,
+          "tp": 1,
+          "fp": 0,
+          "tn": 120010,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        },
+        "10000": {
+          "m": 10000,
+          "total_edges": 238674,
+          "poison_edges": 15,
+          "class_balance": 6.3e-05,
+          "tp": 1,
+          "fp": 0,
+          "tn": 238659,
+          "fn": 14,
+          "precision": 1.0,
+          "recall": 0.066667,
+          "f1": 0.125,
+          "threshold_used": 0.05
+        }
+      }
+    },
+    "4": {
+      "seed": 4,
+      "frozen_threshold": 0.05,
+      "val_metrics": {
+        "threshold": 0.05,
+        "precision": 1.0,
+        "recall": 0.272727,
+        "f1": 0.428571,
+        "accuracy": 0.986667,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.727273,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.636364,
+        "roc_auc": 0.636364,
+        "pr_auc": 0.286061,
+        "mcc": 0.518722,
+        "average_precision": 0.286061
+      },
+      "test_eval": {
+        "0": {
+          "m": 0,
+          "total_edges": 600,
+          "poison_edges": 15,
+          "class_balance": 0.025,
+          "tp": 4,
+          "fp": 0,
+          "tn": 585,
+          "fn": 11,
+          "precision": 1.0,
+          "recall": 0.266667,
+          "f1": 0.421053,
+          "threshold_used": 0.05
+        },
+        "500": {
+          "m": 500,
+          "total_edges": 12540,
+          "poison_edges": 15,
+          "class_balance": 0.001196,
+          "tp": 4,
+          "fp": 0,
+          "tn": 12525,
+          "fn": 11,
+          "precision": 1.0,
+          "recall": 0.266667,
+          "f1": 0.421053,
+          "threshold_used": 0.05
+        },
+        "1000": {
+          "m": 1000,
+          "total_edges": 24380,
+          "poison_edges": 15,
+          "class_balance": 0.000615,
+          "tp": 4,
+          "fp": 0,
+          "tn": 24365,
+          "fn": 11,
+          "precision": 1.0,
+          "recall": 0.266667,
+          "f1": 0.421053,
+          "threshold_used": 0.05
+        },
+        "2000": {
+          "m": 2000,
+          "total_edges": 48276,
+          "poison_edges": 15,
+          "class_balance": 0.000311,
+          "tp": 4,
+          "fp": 0,
+          "tn": 48261,
+          "fn": 11,
+          "precision": 1.0,
+          "recall": 0.266667,
+          "f1": 0.421053,
+          "threshold_used": 0.05
+        },
+        "5000": {
+          "m": 5000,
+          "total_edges": 119612,
+          "poison_edges": 15,
+          "class_balance": 0.000125,
+          "tp": 4,
+          "fp": 0,
+          "tn": 119597,
+          "fn": 11,
+          "precision": 1.0,
+          "recall": 0.266667,
+          "f1": 0.421053,
+          "threshold_used": 0.05
+        },
+        "10000": {
+          "m": 10000,
+          "total_edges": 238746,
+          "poison_edges": 15,
+          "class_balance": 6.3e-05,
+          "tp": 4,
+          "fp": 0,
+          "tn": 238731,
+          "fn": 11,
+          "precision": 1.0,
+          "recall": 0.266667,
+          "f1": 0.421053,
+          "threshold_used": 0.05
+        }
+      }
+    }
+  },
+  "m_summary": {
+    "0": {
+      "m": 0,
+      "mean_class_balance": 0.025,
+      "mean_tp": 2.0,
+      "mean_fp": 0.0,
+      "precision": {
+        "mean": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "recall": {
+        "mean": 0.133333,
+        "ci_lower": 0.08,
+        "ci_upper": 0.200334
+      },
+      "f1": {
+        "mean": 0.228328,
+        "ci_lower": 0.147059,
+        "ci_upper": 0.325242
+      },
+      "is_conclusive": true,
+      "scientific_note": "Precision is robust and flat across dilution volumes due to zero-FPR mask."
+    },
+    "500": {
+      "m": 500,
+      "mean_class_balance": 0.001221,
+      "mean_tp": 2.0,
+      "mean_fp": 0.0,
+      "precision": {
+        "mean": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "recall": {
+        "mean": 0.133333,
+        "ci_lower": 0.08,
+        "ci_upper": 0.200334
+      },
+      "f1": {
+        "mean": 0.228328,
+        "ci_lower": 0.147059,
+        "ci_upper": 0.325242
+      },
+      "is_conclusive": true,
+      "scientific_note": "Precision is robust and flat across dilution volumes due to zero-FPR mask."
+    },
+    "1000": {
+      "m": 1000,
+      "mean_class_balance": 0.000618,
+      "mean_tp": 2.0,
+      "mean_fp": 0.0,
+      "precision": {
+        "mean": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "recall": {
+        "mean": 0.133333,
+        "ci_lower": 0.08,
+        "ci_upper": 0.200334
+      },
+      "f1": {
+        "mean": 0.228328,
+        "ci_lower": 0.147059,
+        "ci_upper": 0.325242
+      },
+      "is_conclusive": true,
+      "scientific_note": "Precision is robust and flat across dilution volumes due to zero-FPR mask."
+    },
+    "2000": {
+      "m": 2000,
+      "mean_class_balance": 0.000312,
+      "mean_tp": 2.0,
+      "mean_fp": 0.0,
+      "precision": {
+        "mean": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "recall": {
+        "mean": 0.133333,
+        "ci_lower": 0.08,
+        "ci_upper": 0.200334
+      },
+      "f1": {
+        "mean": 0.228328,
+        "ci_lower": 0.147059,
+        "ci_upper": 0.325242
+      },
+      "is_conclusive": true,
+      "scientific_note": "Precision is robust and flat across dilution volumes due to zero-FPR mask."
+    },
+    "5000": {
+      "m": 5000,
+      "mean_class_balance": 0.000126,
+      "mean_tp": 2.0,
+      "mean_fp": 0.0,
+      "precision": {
+        "mean": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "recall": {
+        "mean": 0.133333,
+        "ci_lower": 0.08,
+        "ci_upper": 0.200334
+      },
+      "f1": {
+        "mean": 0.228328,
+        "ci_lower": 0.147059,
+        "ci_upper": 0.325242
+      },
+      "is_conclusive": true,
+      "scientific_note": "Precision is robust and flat across dilution volumes due to zero-FPR mask."
+    },
+    "10000": {
+      "m": 10000,
+      "mean_class_balance": 6.3e-05,
+      "mean_tp": 2.0,
+      "mean_fp": 0.0,
+      "precision": {
+        "mean": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "recall": {
+        "mean": 0.133333,
+        "ci_lower": 0.08,
+        "ci_upper": 0.200334
+      },
+      "f1": {
+        "mean": 0.228328,
+        "ci_lower": 0.147059,
+        "ci_upper": 0.325242
+      },
+      "is_conclusive": true,
+      "scientific_note": "Precision is robust and flat across dilution volumes due to zero-FPR mask."
+    }
+  }
+}

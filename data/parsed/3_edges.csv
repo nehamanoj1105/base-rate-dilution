@@ -1,0 +1,2 @@
+edge_id,source_id,target_id,edge_type,timestamp
+e1,n1,n2,read,1002

@@ -1,0 +1,6 @@
+detector,noise_model,m,seed,base_graph_edges,noise_edges,total_edges,poison_edges,base_rate,tp,fp,tn,fn,precision,recall,f1,roc_auc,pr_auc,false_positive_rate,threshold_used,flagged_edges_count,runtime_sec,peak_mem_mb
+Rule-only (HARD set),synthetic,0,42,234,0,234,20,0.08547009,5,0,219,15,1.0,0.25,0.4,0.666667,0.688034,0.0,0.5,5,4e-06,0.0358
+Rule-only (HARD set),synthetic,0,0,234,0,234,20,0.08547009,1,0,219,19,1.0,0.05,0.095238,0.533333,0.563248,0.0,0.5,1,2.7e-05,0.0347
+Rule-only (HARD set),synthetic,0,1,234,0,234,20,0.08547009,2,2,217,18,0.5,0.1,0.166667,0.5621,0.344444,0.009132,0.5,4,2.1e-05,0.0347
+Rule-only (HARD set),synthetic,0,2,234,0,234,20,0.08547009,3,0,219,17,1.0,0.15,0.26087,0.6,0.625641,0.0,0.5,3,1.8e-05,0.0347
+Rule-only (HARD set),synthetic,0,3,234,0,234,20,0.08547009,5,1,218,15,0.833333,0.25,0.384615,0.664384,0.604701,0.004566,0.5,6,1.8e-05,0.0357

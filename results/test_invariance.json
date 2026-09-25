@@ -1,0 +1,33 @@
+{
+  "commit_hash": "d8b8617c4478846ace3b82dbd9fb819c8e2f6a64",
+  "timestamp": "2026-09-23T18:14:24Z",
+  "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43",
+  "config": {
+    "detectors": [
+      "rule_engine"
+    ],
+    "noise_models": [
+      "synthetic",
+      "resampled"
+    ],
+    "m_grid": [
+      0,
+      100,
+      500
+    ],
+    "seeds": [
+      42
+    ],
+    "base_graph_size": 300,
+    "intensity": 3,
+    "k_poison_edges": 12
+  },
+  "thresholds_used": {
+    "rule_engine": {
+      "42": 0.5
+    }
+  },
+  "threshold_provenance": "config/frozen_thresholds.json",
+  "total_rows": 6
+}

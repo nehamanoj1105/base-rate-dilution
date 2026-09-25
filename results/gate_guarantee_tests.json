@@ -1,0 +1,7 @@
+{
+  "guarantee_test_100_inits": "PASSED",
+  "adversarial_parameter_test": "PASSED",
+  "gradient_isolation_test": "PASSED",
+  "monotone_candidate_set_test": "PASSED",
+  "dilution_constant_scorer_test": "PASSED"
+}
