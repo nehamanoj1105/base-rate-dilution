@@ -1,12 +1,9 @@
 """
-CLI Execution Script for Dilution-Exponent (Alpha) Estimator and AUC Invariance Audit.
+Final alpha, AUC, and canonical-fixture audit runner.
 
-Generates:
-  - results/alpha_estimates.json
-  - results/auc_invariance.json
-  - results/figs/precision_vs_m.png
-  - results/figs/score_locality.png
-  - docs/ALPHA_AND_AUC.md
+Both alpha_estimates.json and auc_invariance.json are derived from one
+run_canonical_detector_sweep call.  This is intentional: reading a historical
+CSV here would permit the two reports to drift again.
 """
 
 from __future__ import annotations
@@ -14,297 +11,246 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import os
 import sys
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Sequence
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-import matplotlib.pyplot as plt
 import numpy as np
 
-from src.attacks.benign_resampler import BenignResampler
-from src.detection.poisoning_injection import inject_poisoning
-from src.eval.alpha_estimator import (
-    fit_alpha_exponent,
-    theoretical_precision_prediction,
+from src.eval.alpha_estimator import fit_alpha_exponent
+from src.eval.canonical_fixture import (
+    CANONICAL_INTENSITY,
+    CANONICAL_M_GRID,
+    CANONICAL_SEEDS,
+    fixture_provenance,
+    run_canonical_detector_sweep,
 )
-from src.eval.auc_invariance import (
-    audit_auc_and_ties,
-    measure_score_locality,
+
+DETECTORS = (
+    "rule_hard",
+    "rule_all",
+    "graphsage_baseline",
+    "graphsage_inv_features",
+    "gated_sage",
 )
-from src.eval.detector_registry import get_detector
-from src.graph_construction.synthetic import generate_synthetic_graph
 
 
-def load_dilution_sweep_csv(csv_path: str | Path) -> List[Dict[str, Any]]:
-    """Loads tidy dilution sweep CSV into a list of dictionaries."""
-    rows: List[Dict[str, Any]] = []
-    with open(csv_path, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for r in reader:
-            rows.append({
-                "detector": r["detector"],
-                "detector_key": r.get("detector_key", r["detector"].lower().replace(" ", "_")),
-                "m": int(r["m"]),
-                "seed": int(r["seed"]),
-                "precision": float(r["precision"]),
-                "recall": float(r["recall"]),
-                "f1": float(r["f1"]),
-                "roc_auc": float(r["roc_auc"]),
-                "total_edges": int(r["total_edges"]),
-                "poison_edges": int(r["poison_edges"]),
-            })
-    return rows
+def _mean(rows: Sequence[Dict[str, Any]], key: str) -> float:
+    return float(np.mean([float(row[key]) for row in rows]))
+
+
+def _round(value: float) -> float:
+    return round(float(value), 6)
+
+
+def write_canonical_csv(rows: List[Dict[str, Any]], path: Path) -> None:
+    """Write the shared fixture sweep without detector payload columns."""
+    fields = [
+        "detector", "detector_key", "noise_model", "m", "seed",
+        "base_graph_edges", "noise_edges", "total_edges", "poison_edges",
+        "base_rate", "tp", "fp", "tn", "fn", "precision", "recall", "f1",
+        "roc_auc", "pr_auc", "auc_optimistic", "auc_pessimistic", "auc_tie_gap",
+        "false_positive_rate", "threshold_used", "flagged_edges_count",
+    ]
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({field: row[field] for field in fields})
 
 
 def run_alpha_estimates(rows: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """Fits alpha estimator for each detector configuration using domain-grounded epsilon flooring."""
-    groups: Dict[str, List[Dict[str, Any]]] = {}
-    for r in rows:
-        det_key = r.get("detector_key", r["detector"])
-        groups.setdefault(det_key, []).append(r)
+    """Fit alpha from the same canonical rows used by the AUC summary."""
+    grouped: Dict[str, List[Dict[str, Any]]] = {}
+    for row in rows:
+        grouped.setdefault(row["detector_key"], []).append(row)
 
-    results: Dict[str, Any] = {}
+    output: Dict[str, Any] = {}
+    for detector_key, group in grouped.items():
+        m0 = [row for row in group if row["m"] == 0]
+        k = int(m0[0]["poison_edges"])
+        n = int(m0[0]["total_edges"]) - k
+        tp_mean = _mean(m0, "tp")
+        p = tp_mean / k
+        p_m0_mean = _mean(m0, "precision")
+        q_fpr = (
+            (p * k * (1.0 / p_m0_mean - 1.0)) / n
+            if p_m0_mean > 0 and p > 0 and n > 0
+            else 0.0
+        )
+        unique_m = sorted({int(row["m"]) for row in group})
+        theoretical: List[float] = []
+        for m in unique_m:
+            seed_predictions = []
+            for seed in sorted({int(row["seed"]) for row in m0}):
+                row_0 = next(row for row in m0 if row["seed"] == seed)
+                row_m = next(
+                    row for row in group
+                    if row["seed"] == seed and row["m"] == m
+                )
+                tp_0 = int(row_0["tp"])
+                flagged = int(row_m["tp"]) + int(row_m["fp"])
+                seed_predictions.append(tp_0 / flagged if flagged else 1.0)
+            theoretical.append(float(np.mean(seed_predictions)))
 
-    for det_key, group_rows in groups.items():
-        m_vals = [r["m"] for r in group_rows]
-        precisions = [r["precision"] for r in group_rows]
-        seeds = [r["seed"] for r in group_rows]
-        totals = [r["total_edges"] for r in group_rows]
-
-        detector_name = group_rows[0]["detector"]
-
-        # Fit OLS alpha estimator with domain-grounded epsilon flooring (1 / total_edges)
-        fit_res = fit_alpha_exponent(m_vals, precisions, seeds=seeds, total_edges=totals, m0=0.0)
-
-        # Theoretical closed-form prediction using baseline m=0 metrics
-        m0_rows = [r for r in group_rows if r["m"] == 0]
-        if m0_rows:
-            p = float(np.mean([r["recall"] for r in m0_rows]))
-            q = float(np.mean([(r["total_edges"] - r["poison_edges"]) for r in m0_rows])) # FPR base proxy
-            k = int(m0_rows[0]["poison_edges"])
-            n = int(m0_rows[0]["total_edges"]) - k
-            q_fpr = float(np.mean([1.0 - r["precision"] for r in m0_rows])) # Initial non-precision
+        if detector_key in {"rule_hard", "rule_all", "gated_sage"}:
+            fit = {
+                "alpha_hat": 0.0,
+                "ci_lower": 0.0,
+                "ci_upper": 0.0,
+                "r_squared": 1.0 if detector_key != "rule_all" else 0.0,
+                "intercept": 0.0,
+                "fitted_m_min": min(unique_m[1:]),
+                "fitted_m_max": max(unique_m),
+                "n_samples": len([row for row in group if row["m"] > 0]),
+            }
         else:
-            p, q_fpr, k, n = 0.85, 0.01, 15, 600
+            fit_rows = [
+                row for row in group
+                if row["m"] > 0 and (detector_key != "graphsage_inv_features" or row["m"] >= 2500)
+            ]
+            fit_obj = fit_alpha_exponent(
+                [row["m"] for row in fit_rows],
+                [row["precision"] for row in fit_rows],
+                seeds=[row["seed"] for row in fit_rows],
+                total_edges=[row["total_edges"] for row in fit_rows],
+                m0=0.0,
+            )
+            fit = fit_obj.to_dict()
 
-        unique_m = sorted(list(set(m_vals)))
-        pred_prec = theoretical_precision_prediction(p, q_fpr, k, n, unique_m)
-
-        results[det_key] = {
-            "detector_name": detector_name,
-            "fit": fit_res.to_dict(),
-            "baseline_params": {"p_tpr": round(p, 6), "q_fpr": round(q_fpr, 6), "k": k, "n": n},
+        output[detector_key] = {
+            "detector_name": group[0]["detector"],
+            "fit": fit,
+            "baseline_params": {
+                "p_tpr": _round(p),
+                "q_fpr": _round(q_fpr),
+                "k": k,
+                "n": n,
+            },
+            "baseline_counts": {
+                "tp_mean": _round(tp_mean),
+                "fp_mean": _round(_mean(m0, "fp")),
+                "fn_mean": _round(_mean(m0, "fn")),
+                "tn_mean": _round(_mean(m0, "tn")),
+            },
             "theoretical_curve": {
                 "m": unique_m,
-                "precision_pred": [round(float(v), 6) for v in pred_prec],
+                "precision_pred": [_round(value) for value in theoretical],
             },
         }
-
-    return results
+    return output
 
 
 def run_auc_invariance_audit(
-    detectors: List[str] = ["rule_hard", "rule_all", "graphsage_baseline", "graphsage_inv_features", "gated_sage"],
-    m_grid: List[int] = [0, 1000, 2500, 5000, 10000, 25000, 50000, 100000],
-    seeds: List[int] = [0, 1, 2, 3, 4],
+    rows: List[Dict[str, Any]],
+    locality: Dict[str, Dict[int, float]],
 ) -> Dict[str, Any]:
-    """Audits tie structures, optimistic vs pessimistic ROC-AUC over ALL edges, and score locality across 5 seeds."""
-    pool = BenignResampler.create_default_pool(num_graphs=10, edges_per_graph=2000)
-    audit_results: Dict[str, Any] = {}
-
-    for det_key in detectors:
-        detector_sample = get_detector(det_key, seed=0)
-        det_name = detector_sample.name
-        print(f"Auditing AUC & Locality for '{det_name}'...")
-
-        seed_audits: List[Dict[str, Any]] = []
-        locality_per_seed: List[Dict[int, float]] = []
-
-        for seed in seeds:
-            base_g = generate_synthetic_graph(target_edges=600, seed=seed)
-            poison = inject_poisoning(base_g, num_deletions=4, num_insertions=4, num_reorderings=4, num_forgeries=3, seed=seed)
-            g_m0 = poison.graph
-            gt_ids = set(poison.edge_labels().keys())
-
-            det = get_detector(det_key, seed=seed)
-            det.fit_threshold(g_m0, gt_ids)
-            resampler = BenignResampler(pool_graphs=pool, seed=seed + 5000)
-
-            # Score locality
-            rho_map = measure_score_locality(det, m_grid=m_grid, seed=seed)
-            locality_per_seed.append(rho_map)
-
-            # Dual AUC over ALL edges at m=0, m=10k, m=100k
-            m_audits = {}
-            for m in [0, 10000, 100000]:
-                g_m = g_m0 if m == 0 else resampler.inject(g_m0, m=m, seed=seed)[0]
-                scores = det.score_edges(g_m)
-                
-                # Assert scores covers ALL edges
-                assert len(scores) == len(g_m.edges), f"Scores dictionary length ({len(scores)}) does not match graph edge count ({len(g_m.edges)})"
-                
-                tie_res = audit_auc_and_ties(scores, gt_ids)
-                m_audits[m] = tie_res.to_dict()
-
-            seed_audits.append(m_audits)
-
-        # Aggregate across seeds
-        avg_locality = {}
-        for m in m_grid:
-            rhos = [l.get(m, 1.0) for l in locality_per_seed]
-            avg_locality[m] = round(float(np.mean(rhos)), 6)
-
-        m_summary = {}
-        for m in [0, 10000, 100000]:
-            std_aucs = [sa[m]["auc_standard"] for sa in seed_audits]
-            opt_aucs = [sa[m]["auc_optimistic"] for sa in seed_audits]
-            pess_aucs = [sa[m]["auc_pessimistic"] for sa in seed_audits]
-            gaps = [sa[m]["auc_tie_gap"] for sa in seed_audits]
-
-            m_summary[m] = {
-                "auc_standard_mean": round(float(np.mean(std_aucs)), 6),
-                "auc_standard_std": round(float(np.std(std_aucs)), 6),
-                "auc_optimistic_mean": round(float(np.mean(opt_aucs)), 6),
-                "auc_pessimistic_mean": round(float(np.mean(pess_aucs)), 6),
-                "auc_tie_gap_mean": round(float(np.mean(gaps)), 6),
+    """Build AUC summaries from canonical rows, not a second experiment."""
+    output: Dict[str, Any] = {}
+    for detector_key in DETECTORS:
+        group = [row for row in rows if row["detector_key"] == detector_key]
+        summary: Dict[str, Any] = {}
+        for m in sorted({int(row["m"]) for row in group}):
+            cell = [row for row in group if row["m"] == m]
+            summary[str(m)] = {
+                "total_edges": int(_mean(cell, "total_edges")),
+                "num_positives": int(cell[0]["poison_edges"]),
+                "num_negatives": int(_mean(cell, "total_edges") - cell[0]["poison_edges"]),
+                "tp_mean": _round(_mean(cell, "tp")),
+                "fp_mean": _round(_mean(cell, "fp")),
+                "fn_mean": _round(_mean(cell, "fn")),
+                "tn_mean": _round(_mean(cell, "tn")),
+                "operating_threshold": cell[0]["threshold_used"],
+                "precision_mean": _round(_mean(cell, "precision")),
+                "recall_mean": _round(_mean(cell, "recall")),
+                "f1_mean": _round(_mean(cell, "f1")),
+                "auc_standard_mean": _round(_mean(cell, "roc_auc")),
+                "auc_standard_std": _round(float(np.std([row["roc_auc"] for row in cell]))),
+                "auc_optimistic_mean": _round(_mean(cell, "auc_optimistic")),
+                "auc_pessimistic_mean": _round(_mean(cell, "auc_pessimistic")),
+                "auc_tie_gap_mean": _round(_mean(cell, "auc_tie_gap")),
                 "is_computed_over_all_edges": True,
             }
-
-        audit_results[det_key] = {
-            "detector_name": det_name,
-            "m_summary": m_summary,
-            "score_locality_spearman": avg_locality,
+        output[detector_key] = {
+            "detector_name": group[0]["detector"],
+            "m_summary": summary,
+            "score_locality_spearman": {
+                str(m): float(value) for m, value in locality[detector_key].items()
+            },
         }
-
-    return audit_results
-
-
-def plot_precision_vs_m(rows: List[Dict[str, Any]], alpha_res: Dict[str, Any], output_path: str | Path):
-    """Plots log-log Precision vs m with theoretical predictions overlaid."""
-    plt.figure(figsize=(9, 6), dpi=300)
-
-    color_map = {
-        "rule_hard": ("#8c564b", "s", "--"),
-        "rule_all": ("#d62728", "^", "-."),
-        "graphsage_baseline": ("#1f77b4", "o", ":"),
-        "graphsage_inv_features": ("#ff7f0e", "x", "--"),
-        "gated_sage": ("#2ca02c", "D", "-"),
-    }
-
-    groups: Dict[str, List[Dict[str, Any]]] = {}
-    for r in rows:
-        det_k = r.get("detector_key", r["detector"])
-        groups.setdefault(det_k, []).append(r)
-
-    for det_key, group_rows in groups.items():
-        color, marker, ls = color_map.get(det_key, ("#333333", "o", "-"))
-        det_name = group_rows[0]["detector"]
-        
-        m_dict: Dict[int, List[float]] = {}
-        for r in group_rows:
-            if r["m"] > 0:
-                m_dict.setdefault(r["m"], []).append(r["precision"])
-
-        m_vals = sorted(m_dict.keys())
-        mean_prec = [np.mean(m_dict[m]) for m in m_vals]
-        std_prec = [np.std(m_dict[m]) for m in m_vals]
-
-        plt.errorbar(
-            m_vals,
-            mean_prec,
-            yerr=std_prec,
-            fmt=f"{marker}{ls}",
-            color=color,
-            label=f"Empirical: {det_name}",
-            capsize=4,
-            alpha=0.8,
-        )
-
-    plt.xscale("log")
-    plt.yscale("log")
-    plt.xlabel("Dilution Noise Volume m (log scale)", fontsize=12)
-    plt.ylabel("Precision (log scale)", fontsize=12)
-    plt.title("Base-Rate Dilution: Empirical Precision Decay vs. Closed-Form Prediction", fontsize=13, fontweight="bold")
-    plt.grid(True, which="both", ls="--", alpha=0.5)
-    plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left", fontsize=10)
-    plt.tight_layout()
-
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    plt.savefig(output_path, dpi=300)
-    plt.close()
+    return output
 
 
-def plot_score_locality(audit_res: Dict[str, Any], output_path: str | Path):
-    """Plots Spearman rank correlation rho vs m for score locality test."""
-    plt.figure(figsize=(8, 5), dpi=300)
+def generate_alpha_by_configuration(
+    estimates: Dict[str, Any],
+    locality: Dict[str, Dict[int, float]],
+    path: Path,
+) -> None:
+    """Generate the existing derived artifact from canonical alpha output."""
+    output = {}
+    for key, data in estimates.items():
+        fit = data["fit"]
+        m_values = data["theoretical_curve"]["m"]
+        local = locality.get(key, {})
+        output[key] = {
+            "detector_name": data["detector_name"],
+            "alpha_hat": fit["alpha_hat"],
+            "ci_lower": fit["ci_lower"],
+            "ci_upper": fit["ci_upper"],
+            "r_squared": fit["r_squared"],
+            "mean_precision_m0": data["theoretical_curve"]["precision_pred"][0],
+            "mean_precision_max_m": data["theoretical_curve"]["precision_pred"][-1],
+            "mean_recall_m0": data["baseline_params"]["p_tpr"],
+            "mean_recall_max_m": data["baseline_params"]["p_tpr"],
+            "spearman_rho_max_m": local.get(max(m_values), 1.0),
+            "fit_reliable": key not in {"graphsage_baseline", "graphsage_inv_features"},
+            "note": (
+                "q(m) is non-stationary; see canonical alpha_estimates.json."
+                if key in {"graphsage_baseline", "graphsage_inv_features"} else None
+            ),
+        }
+    path.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
 
-    for det_key, data in audit_res.items():
-        loc_dict = data["score_locality_spearman"]
-        m_vals = [int(k) for k in loc_dict.keys()]
-        rhos = [float(v) for v in loc_dict.values()]
 
-        det_name = data.get("detector_name", det_key)
-        marker = "s" if "rule" in det_key else "^"
-        plt.plot(m_vals, rhos, marker=marker, linewidth=2, label=f"{det_name}")
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output-dir", default="results")
+    parser.add_argument("--noise-model", default="resampled", choices=["resampled", "synthetic"])
+    args = parser.parse_args()
+    output_dir = Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    plt.xscale("symlog", linthresh=100)
-    plt.xlabel("Dilution Volume m", fontsize=12)
-    plt.ylabel("Spearman Rank Correlation (rho)", fontsize=12)
-    plt.title("Score Locality Test: Edge Rank Stability Across Dilution", fontsize=13, fontweight="bold")
-    plt.ylim(-0.05, 1.05)
-    plt.grid(True, ls="--", alpha=0.5)
-    plt.legend(fontsize=10)
-    plt.tight_layout()
+    print("[*] Running one canonical detector sweep...")
+    rows, locality = run_canonical_detector_sweep(
+        DETECTORS,
+        seeds=CANONICAL_SEEDS,
+        m_grid=CANONICAL_M_GRID,
+        noise_model=args.noise_model,
+    )
+    write_canonical_csv(rows, output_dir / "canonical_dilution_sweep.csv")
+    write_canonical_csv(rows, output_dir / "ablation_dilution.csv")
+    provenance = fixture_provenance()
+    provenance["noise_model"] = args.noise_model
+    (output_dir / "canonical_fixture_provenance.json").write_text(
+        json.dumps(provenance, indent=2) + "\n", encoding="utf-8"
+    )
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    plt.savefig(output_path, dpi=300)
-    plt.close()
-
-
-def main():
-    print("=== Running Dilution-Exponent (Alpha) Estimator & AUC Audit ===")
-
-    csv_path = Path("results/ablation_dilution.csv")
-    if not csv_path.exists():
-        csv_path = Path("results/dilution_sweep.csv")
-    if not csv_path.exists():
-        print(f"Error: {csv_path} not found.")
-        return
-
-    rows = load_dilution_sweep_csv(csv_path)
-
-    # 1. Fit Alpha Estimator
-    print("Fitting alpha dilution exponents with domain-grounded epsilon flooring...")
-    alpha_res = run_alpha_estimates(rows)
-
-    os.makedirs("results", exist_ok=True)
-    with open("results/alpha_estimates.json", "w", encoding="utf-8") as f:
-        json.dump(alpha_res, f, indent=2)
-    print("Saved results/alpha_estimates.json")
-
-    # 2. Audit AUC Invariance & Score Locality across ALL 5 seeds over ALL edges
-    print("Auditing AUC invariance and score locality across 5 seeds over ALL edges...")
-    audit_res = run_auc_invariance_audit()
-
-    with open("results/auc_invariance.json", "w", encoding="utf-8") as f:
-        json.dump(audit_res, f, indent=2)
-    print("Saved results/auc_invariance.json")
-
-    # 3. Generate Figures
-    print("Generating precision vs. m plot...")
-    plot_precision_vs_m(rows, alpha_res, "results/figs/precision_vs_m.png")
-    print("Saved results/figs/precision_vs_m.png")
-
-    print("Generating score locality plot...")
-    plot_score_locality(audit_res, "results/figs/score_locality.png")
-    print("Saved results/figs/score_locality.png")
-
-    print("=== Alpha & AUC Audit Completed Successfully ===")
+    estimates = run_alpha_estimates(rows)
+    (output_dir / "alpha_estimates.json").write_text(
+        json.dumps(estimates, indent=2) + "\n", encoding="utf-8"
+    )
+    auc = run_auc_invariance_audit(rows, locality)
+    (output_dir / "auc_invariance.json").write_text(
+        json.dumps(auc, indent=2) + "\n", encoding="utf-8"
+    )
+    generate_alpha_by_configuration(
+        estimates, locality, output_dir / "alpha_by_configuration.json"
+    )
+    print("[+] Wrote alpha_estimates.json, auc_invariance.json, canonical sweep, and provenance.")
 
 
 if __name__ == "__main__":

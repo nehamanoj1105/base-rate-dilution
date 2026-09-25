@@ -1,0 +1,2 @@
+Attack,Seed,TP,FP,TN,FN,Precision,Recall,F1,Accuracy,FalsePositiveRate,FalseNegativeRate,Specificity,BalancedAccuracy,Runtime
+all,42,13,3,161,7,0.8125,0.65,0.722222,0.945652,0.018293,0.35,0.981707,0.815854,0.00235

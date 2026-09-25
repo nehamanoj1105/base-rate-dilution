@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Causal Provenance Tamper Detection - Experimental Artifact Manifest",
     "git_commit": "d8b8617c4478846ace3b82dbd9fb819c8e2f6a64",
-    "timestamp": "2026-09-23T18:13:57Z",
+    "timestamp": "2026-09-24T16:09:51Z",
     "environment": {
       "python_version": "3.14.4",
       "pytorch_version": "2.13.0+cpu",

@@ -24,6 +24,7 @@ from src.detection.poisoning_injection import inject_poisoning
 from src.eval.alpha_estimator import AlphaFitResult, fit_alpha_exponent
 from src.eval.cross_dataset import load_dataset_graph
 from src.eval.detector_registry import GatedSAGEAdapter, GraphSAGEAdapter
+from src.eval.noise_realism_audit import measure_noise_violations
 from src.eval.partition_transfer import run_partition_transfer_check
 from src.graph_construction.schema import EdgeType, NodeType, ProvenanceEdge, ProvenanceGraph, ProvenanceNode
 
@@ -113,6 +114,8 @@ def run_ood_experiment(
     )
 
     sweep_records: list[dict[str, Any]] = []
+    hard_violation_records: list[dict[str, Any]] = []
+    hard_rules = set(json.loads(Path("config/invariant_partition.json").read_text())["hard_rules"])
 
     for d_idx, d_info in enumerate(directions, 1):
         dir_name = d_info.get("name", f"Dir_{d_idx}")
@@ -143,7 +146,7 @@ def run_ood_experiment(
                 num_forgeries=poison_intensity,
                 seed=seed,
             )
-            train_gt_ids = {e.edge_id for e in train_poison_res.events}
+            train_gt_ids = {e.edge_id for e in train_poison_res.events if e.poisoning_type.value != "deletion"}
 
             # Instantiate & calibrate detectors ONCE on Train graph
             # 1. Ungated GraphSAGE
@@ -176,10 +179,12 @@ def run_ood_experiment(
                         seed=seed,
                     )
                     eval_graph = target_poison.graph
-                    poison_ids = {e.edge_id for e in target_poison.events}
+                    poison_ids = {e.edge_id for e in target_poison.events if e.poisoning_type.value != "deletion"}
 
                     # Inject dilution noise
+                    noise_ids: set[str] = set()
                     if m > 0:
+                        before_noise_ids = {edge.edge_id for edge in eval_graph.edges}
                         if noise_model == "resampled":
                             # Use source scenarios benign graph as pool to ensure no leakage from test
                             eval_graph = inject_resampled_benign_noise(
@@ -188,6 +193,7 @@ def run_ood_experiment(
                                 target_added_edges=m,
                                 seed=seed + m,
                             )
+                            noise_ids = {edge.edge_id for edge in eval_graph.edges} - before_noise_ids
                         else:  # synthetic
                             mimic_res = inject_mimicry_attack(
                                 eval_graph,
@@ -196,6 +202,22 @@ def run_ood_experiment(
                                 seed=seed + m,
                             )
                             eval_graph = mimic_res.graph
+                            noise_ids = set(mimic_res.camouflaged_edge_ids)
+
+                    for audit_row in measure_noise_violations(eval_graph, noise_ids):
+                        if audit_row.rule_name in hard_rules:
+                            hard_violation_records.append({
+                                "direction": dir_name,
+                                "train_scenarios": ",".join(train_scenarios),
+                                "test_scenarios": ",".join(test_scenarios),
+                                "noise_model": noise_model,
+                                "seed": seed,
+                                "m": m,
+                                "rule_name": audit_row.rule_name,
+                                "violations": audit_row.num_violations,
+                                "opportunities": audit_row.total_noise_edges,
+                                "violation_rate": audit_row.violation_rate,
+                            })
 
                     # Evaluate each detector with frozen threshold
                     for det_key, det in detectors.items():
@@ -266,8 +288,32 @@ def run_ood_experiment(
         "seeds": list(seeds),
         "noise_models": list(noise_models),
         "partition_transfer_check": partition_transfer_report,
+        "noise_provenance": {
+            "resampled_donor": {
+                "source": "train_graph",
+                "train_scenarios_by_direction": {
+                    d["name"]: d["train"] for d in directions
+                },
+                "benign_pool_generator": "load_combined_scenario_graph(train_scenarios, seed=42)",
+                "same_distribution_as_soundness_validation": False,
+                "soundness_validation_distribution": (
+                    "BenignResampler.create_default_pool(num_graphs=10, edges_per_graph=500) "
+                    "over generate_synthetic_graph / generate_realistic_benign_graph (Phase 2)"
+                ),
+                "note": (
+                    "The resampled OOD noise population is drawn from the SOURCE (train) "
+                    "scenario graphs, NOT from the synthetic/realistic pool used for the "
+                    "original HARD-invariant soundness validation. This is a distributional "
+                    "shift: the HARD invariants are empirically benign-null on the pool used "
+                    "for soundness validation but are violated by the target scenario "
+                    "distributions."
+                ),
+            },
+            "synthetic_generator": "src.detection.mimicry_attack.inject_mimicry_attack (camouflaged_edge_ids)",
+        },
         "alpha_fits": alpha_results,
         "sweep_results": sweep_records,
+        "hard_violation_audit": hard_violation_records,
     }
 
     out_p = Path(output_json_path)

@@ -1,0 +1,38 @@
+{
+  "fixture_module": "src.eval.canonical_fixture",
+  "builder": "build_canonical_fixture",
+  "graph_generator": "src.graph_construction.synthetic.generate_synthetic_graph",
+  "poisoning": "src.detection.poisoning_injection.inject_poisoning",
+  "positive_label_rule": "non-deletion poisoning events only",
+  "target_edges": 600,
+  "intensity": 5,
+  "poison_positive_edges": 20,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "m_grid": [
+    0,
+    1000,
+    2500,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000
+  ],
+  "detectors": [
+    "rule_hard",
+    "rule_all",
+    "graphsage_baseline",
+    "graphsage_inv_features",
+    "gated_sage"
+  ],
+  "resampling_pool": "BenignResampler.create_default_pool(num_graphs=10, edges_per_graph=2000)",
+  "resampling_conversion": "m_units=max(1, m//24)",
+  "reason": "Alpha and AUC consumers must score the same graph, labels, detector state, and outputs.",
+  "noise_model": "resampled"
+}

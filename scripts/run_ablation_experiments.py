@@ -33,6 +33,10 @@ import time
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -46,6 +50,7 @@ from src.detection.poisoning_injection import inject_poisoning
 from src.detection.rule_engine import default_rule_engine
 from src.eval.alpha_estimator import fit_alpha_exponent
 from src.eval.auc_invariance import measure_score_locality, audit_auc_and_ties
+from src.eval.canonical_fixture import get_canonical_eval_fixture, get_calibrated_detector
 from src.eval.detector_registry import get_detector
 from src.graph_construction.synthetic import generate_synthetic_graph
 from src.ml.dataset import provenance_to_pyg_data
@@ -92,22 +97,14 @@ def run_experiment_e(
         detector_sample = get_detector(det_key, seed=0)
         detector_name = detector_sample.name
 
+        det_seed0 = None
         for seed in seeds:
-            set_seed(seed)
-            base_g = generate_synthetic_graph(target_edges=600, seed=seed)
-            poison = inject_poisoning(
-                base_g,
-                num_deletions=4,
-                num_insertions=4,
-                num_reorderings=4,
-                num_forgeries=3,
-                seed=seed,
-            )
+            base_g, poison, gt_ids = get_canonical_eval_fixture(seed=seed, target_edges=600, intensity=5)
             g_m0 = poison.graph
-            gt_ids = set(poison.edge_labels().keys())
 
-            detector = get_detector(det_key, seed=seed, hidden_channels=32, epochs=25)
-            detector.fit_threshold(g_m0, gt_ids)
+            detector = get_calibrated_detector(det_key, seed=seed, val_graph=g_m0, val_gt_ids=gt_ids, hidden_channels=32, epochs=25)
+            if seed == 0:
+                det_seed0 = detector
             thresh = detector.operating_threshold
 
             resampler = BenignResampler(pool_graphs=pool, seed=seed + 5000)
@@ -173,8 +170,12 @@ def run_experiment_e(
                 tot_flat.append(det_m_totals[m][idx])
 
         alpha_res = fit_alpha_exponent(m_flat, p_flat, seeds=seed_flat, total_edges=tot_flat)
-        det_seed0 = get_detector(det_key, seed=0)
-        rho_dict = measure_score_locality(det_seed0, m_grid=[0, 500, 1000, 2000, 5000, 10000], seed=0)
+
+        # Always build a seed-0 calibrated detector for score locality (seeds list may not include 0)
+        if det_seed0 is None:
+            _base_g0, _poison0, _gt0 = get_canonical_eval_fixture(seed=0, target_edges=600, intensity=5)
+            det_seed0 = get_calibrated_detector(det_key, seed=0, val_graph=_poison0.graph, val_gt_ids=_gt0, hidden_channels=32, epochs=25)
+        rho_dict = measure_score_locality(det_seed0, m_grid=m_grid, seed=0)
 
         max_m = max(m_grid)
         alpha_summary[det_key] = {
@@ -182,12 +183,12 @@ def run_experiment_e(
             "alpha_hat": round(alpha_res.alpha_hat, 6),
             "ci_lower": round(alpha_res.ci_lower, 6),
             "ci_upper": round(alpha_res.ci_upper, 6),
-            "r_squared": round(alpha_res.r_squared, 6),
+            "r_squared": round(alpha_res.r_squared, 6) if alpha_res.r_squared is not None else None,
             "mean_precision_m0": round(float(np.mean(det_m_precisions[0])), 6),
             "mean_precision_max_m": round(float(np.mean(det_m_precisions[max_m])), 6),
             "mean_recall_m0": round(float(np.mean(det_m_recalls[0])), 6),
             "mean_recall_max_m": round(float(np.mean(det_m_recalls[max_m])), 6),
-            "spearman_rho_max_m": rho_dict.get(max_m, 1.0),
+            "spearman_rho_max_m": round(float(rho_dict[max_m]), 6),
         }
 
         t_elapsed = time.time() - t0_det
@@ -304,18 +305,8 @@ def run_experiment_f(
         det_m_precisions: Dict[int, List[float]] = {m: [] for m in m_sweep}
 
         for seed in seeds:
-            set_seed(seed)
-            base_g = generate_synthetic_graph(target_edges=600, seed=seed)
-            poison = inject_poisoning(
-                base_g,
-                num_deletions=4,
-                num_insertions=4,
-                num_reorderings=4,
-                num_forgeries=3,
-                seed=seed,
-            )
+            base_g, poison, gt_ids = get_canonical_eval_fixture(seed=seed, target_edges=600, intensity=5)
             g_m0 = poison.graph
-            gt_ids = set(poison.edge_labels().keys())
 
             pyg_data = provenance_to_pyg_data(g_m0, poisoned_edge_ids=gt_ids, include_soft_invariants=True)
             base_model = GraphSAGEForTamperDetection(

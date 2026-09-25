@@ -168,6 +168,116 @@ class BenignResampler:
 
         return extracted_edges, extracted_node_ids, root_id
 
+    def inject_in_place(
+        self, graph: ProvenanceGraph, m: int, seed: int | None = None
+    ) -> tuple[ProvenanceGraph, set[str]]:
+        """
+        Inject m benign subgraphs into graph in place (modifying graph).
+
+        Returns (graph, injected_edge_ids).
+        """
+        rng = random.Random(seed)
+
+        if m == 0:
+            return graph, set()
+
+        # Determine target timestamp window
+        if not graph.edges:
+            min_ts, max_ts = 0.0, 1.0
+        else:
+            min_ts = min(e.timestamp for e in graph.edges)
+            max_ts = max(e.timestamp for e in graph.edges)
+
+        # Identify existing process nodes in target graph for root mapping
+        target_procs = [
+            nid for nid, n in graph.nodes.items()
+            if n.node_type == NodeType.PROCESS
+        ]
+        if not target_procs:
+            target_procs = list(graph.nodes.keys())
+
+        # Pre-map spawn times of target procs
+        proc_spawn_ts: dict[str, float] = {}
+        for e in graph.edges:
+            e_type = (e.edge_type.value if hasattr(e.edge_type, "value") else str(e.edge_type)).lower()
+            if e_type == "spawn":
+                proc_spawn_ts[e.target_id] = e.timestamp
+
+        injected_edge_ids: set[str] = set()
+
+        for _ in range(m):
+            pool_graph = rng.choice(self.pool_graphs)
+
+            extracted_edges, extracted_node_ids, root_id = (
+                self._extract_process_tree(pool_graph, rng)
+            )
+            if not extracted_edges:
+                continue
+
+            # --- Build node mapping ---
+            node_mapping: dict[str, str] = {}
+            target_proc = rng.choice(target_procs)
+            if root_id and root_id in extracted_node_ids:
+                node_mapping[root_id] = target_proc
+
+            for nid in sorted(extracted_node_ids):
+                if nid in node_mapping:
+                    continue  # root already mapped
+                n_type = pool_graph.nodes[nid].node_type.value
+                node_mapping[nid] = (
+                    f"resample_{n_type}_{self.batch_counter}_{len(node_mapping)}"
+                )
+
+            # --- Rebase timestamps ---
+            extracted_edges.sort(key=lambda x: x.timestamp)
+            orig_min = extracted_edges[0].timestamp
+            orig_max = extracted_edges[-1].timestamp
+
+            seq_duration = orig_max - orig_min
+            root_spawn = proc_spawn_ts.get(target_proc, min_ts)
+            min_start = max(min_ts, root_spawn)
+
+            window = max(1.0, max_ts - min_start)
+            scale = window / seq_duration if seq_duration > window else 1.0
+
+            effective_duration = seq_duration * scale
+            max_start = max(min_start, max_ts - effective_duration)
+            start_ts = rng.uniform(min_start, max_start)
+
+            # --- Add NEW nodes (skip root — it's an existing node) ---
+            for nid in extracted_node_ids:
+                mapped_id = node_mapping[nid]
+                if mapped_id in graph.nodes:
+                    continue  # root or duplicate — already exists
+                orig_node = pool_graph.nodes[nid]
+                new_node = ProvenanceNode(
+                    node_id=mapped_id,
+                    node_type=orig_node.node_type,
+                    label=orig_node.label,
+                    attributes=orig_node.attributes.copy(),
+                )
+                graph.add_node(new_node)
+
+            # --- Add edges with sequential IDs ---
+            seq = 0
+            for e in extracted_edges:
+                new_ts = start_ts + (e.timestamp - orig_min) * scale
+                new_edge = ProvenanceEdge(
+                    edge_id=f"resample_e_{self.batch_counter}_{seq}",
+                    source_id=node_mapping[e.source_id],
+                    target_id=node_mapping[e.target_id],
+                    edge_type=e.edge_type,
+                    timestamp=new_ts,
+                    attributes=e.attributes.copy(),
+                )
+                injected_edge_ids.add(new_edge.edge_id)
+                graph.add_edge(new_edge)
+                seq += 1
+
+            self.batch_counter += 1
+
+        return graph, injected_edge_ids
+
     def inject(
         self, graph: ProvenanceGraph, m: int, seed: int | None = None
     ) -> tuple[ProvenanceGraph, set[str]]:
@@ -178,23 +288,12 @@ class BenignResampler:
         - new_graph contains all original edges unchanged + injected edges.
         - injected_edge_ids is the set of new edge IDs.
         """
-        rng = random.Random(seed)
-
         # Deep copy the target graph so originals are never modified
         new_graph = ProvenanceGraph(
             nodes={k: copy.deepcopy(v) for k, v in graph.nodes.items()},
             edges=[copy.deepcopy(e) for e in graph.edges],
         )
-
-        if m == 0:
-            return new_graph, set()
-
-        # Determine target timestamp window
-        if not graph.edges:
-            min_ts, max_ts = 0.0, 1.0
-        else:
-            min_ts = min(e.timestamp for e in graph.edges)
-            max_ts = max(e.timestamp for e in graph.edges)
+        return self.inject_in_place(new_graph, m, seed)
 
         # Identify existing process nodes in target graph for root mapping
         target_procs = [

@@ -1,0 +1,354 @@
+[
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "DeleteConsistencyRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "DuplicateEdgeRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "ExecutionConsistencyRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "MissingNodeRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "NetworkConsistencyRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "ParentChildTemporalRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "ProcessActivityTemporalRule",
+    "violations": 3230,
+    "opportunities": 11590785,
+    "violation_rate": 0.00027866965007115565
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "SelfLoopRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "SequenceGapRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "SpawnConsistencyRule",
+    "violations": 237,
+    "opportunities": 11590785,
+    "violation_rate": 2.0447277729679223e-05
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "resampled",
+    "rule_name": "TimestampRule",
+    "violations": 0,
+    "opportunities": 11590785,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "DeleteConsistencyRule",
+    "violations": 931,
+    "opportunities": 29400,
+    "violation_rate": 0.03166666666666667
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "DuplicateEdgeRule",
+    "violations": 0,
+    "opportunities": 29400,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "ExecutionConsistencyRule",
+    "violations": 959,
+    "opportunities": 29400,
+    "violation_rate": 0.03261904761904762
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "MissingNodeRule",
+    "violations": 0,
+    "opportunities": 29400,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "NetworkConsistencyRule",
+    "violations": 1162,
+    "opportunities": 29400,
+    "violation_rate": 0.039523809523809524
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "ParentChildTemporalRule",
+    "violations": 3809,
+    "opportunities": 29400,
+    "violation_rate": 0.1295578231292517
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "ProcessActivityTemporalRule",
+    "violations": 8961,
+    "opportunities": 29400,
+    "violation_rate": 0.30479591836734693
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "SelfLoopRule",
+    "violations": 0,
+    "opportunities": 29400,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "SequenceGapRule",
+    "violations": 0,
+    "opportunities": 29400,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "SpawnConsistencyRule",
+    "violations": 1210,
+    "opportunities": 29400,
+    "violation_rate": 0.04115646258503401
+  },
+  {
+    "direction": "Dir1_1r3_to_5m6r",
+    "noise_model": "synthetic",
+    "rule_name": "TimestampRule",
+    "violations": 0,
+    "opportunities": 29400,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "DeleteConsistencyRule",
+    "violations": 0,
+    "opportunities": 3744477,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "DuplicateEdgeRule",
+    "violations": 0,
+    "opportunities": 3744477,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "ExecutionConsistencyRule",
+    "violations": 0,
+    "opportunities": 3744477,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "MissingNodeRule",
+    "violations": 0,
+    "opportunities": 3744477,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "NetworkConsistencyRule",
+    "violations": 0,
+    "opportunities": 3744477,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "ParentChildTemporalRule",
+    "violations": 3270,
+    "opportunities": 3744477,
+    "violation_rate": 0.0008732861758798358
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "ProcessActivityTemporalRule",
+    "violations": 1243,
+    "opportunities": 3744477,
+    "violation_rate": 0.00033195557083138714
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "SelfLoopRule",
+    "violations": 0,
+    "opportunities": 3744477,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "SequenceGapRule",
+    "violations": 0,
+    "opportunities": 3744477,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "SpawnConsistencyRule",
+    "violations": 4998,
+    "opportunities": 3744477,
+    "violation_rate": 0.0013347658431337674
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "resampled",
+    "rule_name": "TimestampRule",
+    "violations": 0,
+    "opportunities": 3744477,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "DeleteConsistencyRule",
+    "violations": 20844,
+    "opportunities": 627200,
+    "violation_rate": 0.03323341836734694
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "DuplicateEdgeRule",
+    "violations": 0,
+    "opportunities": 627200,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "ExecutionConsistencyRule",
+    "violations": 21067,
+    "opportunities": 627200,
+    "violation_rate": 0.03358896683673469
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "MissingNodeRule",
+    "violations": 0,
+    "opportunities": 627200,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "NetworkConsistencyRule",
+    "violations": 29367,
+    "opportunities": 627200,
+    "violation_rate": 0.046822385204081635
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "ParentChildTemporalRule",
+    "violations": 81195,
+    "opportunities": 627200,
+    "violation_rate": 0.1294563137755102
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "ProcessActivityTemporalRule",
+    "violations": 194515,
+    "opportunities": 627200,
+    "violation_rate": 0.3101323341836735
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "SelfLoopRule",
+    "violations": 0,
+    "opportunities": 627200,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "SequenceGapRule",
+    "violations": 0,
+    "opportunities": 627200,
+    "violation_rate": 0.0
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "SpawnConsistencyRule",
+    "violations": 34249,
+    "opportunities": 627200,
+    "violation_rate": 0.054606186224489796
+  },
+  {
+    "direction": "Dir2_5m6r_to_1r3",
+    "noise_model": "synthetic",
+    "rule_name": "TimestampRule",
+    "violations": 0,
+    "opportunities": 627200,
+    "violation_rate": 0.0
+  }
+]

@@ -2,4 +2,4 @@
 
 | Attack | Seed | Graph Loading (s) | Attack Injection (s) | Rule Engine (s) | Evaluation (s) | Total Runtime (s) |
 |---|---|---|---|---|---|---|
-| all | 42 | 0.000215 | 0.000246 | 0.001395 | 0.000001 | 0.001858 |
+| all | 42 | 0.000260 | 0.000269 | 0.001818 | 0.000001 | 0.002350 |

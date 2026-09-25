@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Adaptive Adversary Capability Certificate and Detection Cost under Feasible Search.}
+\label{tab:adaptive_adversary}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Objective Name} & \textbf{Achieved?} & \textbf{Infeasible Cost} & \textbf{Feasible Cost} & \textbf{Effort Overhead} & \textbf{Gated Score} & \textbf{Certificate Verdict} \\
+\midrule
+\texttt{credential_access} & YES & 1.0 & 1.0 & 1.0x & 0.0000 & Feasible realization achieved with 1.0x edge overhead cost (range [1.0x, 1.0x]) \\
+\texttt{lateral_movement} & YES & 2.0 & 2.0 & 1.0x & 0.0000 & Feasible realization achieved with 1.0x edge overhead cost (range [1.0x, 1.0x]) \\
+\texttt{exfiltration} & YES & 2.0 & 2.0 & 1.0x & 0.0000 & Feasible realization achieved with 1.0x edge overhead cost (range [1.0x, 1.0x]) \\
+\texttt{log_tampering} & YES & 1.0 & 1.0 & 1.0x & 0.0000 & Feasible realization achieved with 1.0x edge overhead cost (range [1.0x, 1.0x]) \\
+\texttt{unspawned_stealth_exec} & YES & 1.0 & 2.0 & 2.0x & 0.0000 & Feasible realization achieved with 2.0x edge overhead cost (range [2.0x, 2.0x]) \\
+\texttt{backdated_timestamp_tampering} & YES & 1.0 & 1.0 & 1.0x & 0.0000 & Feasible realization achieved with 1.0x edge overhead cost (range [1.0x, 1.0x]) \\
+\texttt{self_loop_execution} & NO & 1.0 & 0.0 & 0.0x & 0.0000 & UNACHIEVABLE without violating rule(s): ExecutionConsistencyRule, SelfLoopRule \\
+\bottomrule
+\end{tabular}
+\end{table*}

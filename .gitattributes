@@ -1,2 +1,3 @@
 data/elliptic/raw/elliptic_txs_features.csv filter=lfs diff=lfs merge=lfs -text
 data/elliptic/processed/data.pt filter=lfs diff=lfs merge=lfs -text
+data/raw/theia/ta1-theia-e3-official-3.json filter=lfs diff=lfs merge=lfs -text

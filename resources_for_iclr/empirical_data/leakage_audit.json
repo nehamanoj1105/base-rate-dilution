@@ -1,0 +1,43 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "disjoint_seed_sets": {
+      "passed": true,
+      "train_seeds": [
+        0,
+        1,
+        2
+      ],
+      "val_seeds": [
+        3
+      ],
+      "test_seeds": [
+        4
+      ],
+      "pool_seeds_min": 5000,
+      "pool_seeds_max": 5009
+    },
+    "no_test_edge_in_train_or_val": {
+      "passed": true,
+      "train_val_edges_count": 2000,
+      "test_edges_count": 500,
+      "overlap_count": 0
+    },
+    "resampler_pool_isolation": {
+      "passed": true,
+      "pool_graphs_count": 10,
+      "pool_total_edges": 2000,
+      "test_overlap_count": 0
+    },
+    "invariant_partition_provenance": {
+      "passed": true,
+      "source": "TRAIN/VAL evaluation",
+      "hard_rules_count": 11,
+      "soft_rules_count": 4
+    },
+    "threshold_calibration_protocol": {
+      "passed": true,
+      "protocol": "VAL at m=0 only, then frozen"
+    }
+  }
+}

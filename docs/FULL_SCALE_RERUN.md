@@ -66,9 +66,26 @@ Recomputed over **ALL edges** across 5 seeds and 8 $m$-grid points (preserving o
 - **`graphsage_baseline`**: Standard ROC-AUC starts at $0.8775 \pm 0.0412$ at $m=0$, decaying to $0.5909 \pm 0.1472$ at $m=100000$ over all graph edges (Mean Optimistic AUC = 0.8393, Mean Pessimistic AUC = 0.7435, Tie Gap = 0.0958 at $m=10k$).
 - **`rule_all`**: Standard ROC-AUC = $0.9308$, Optimistic AUC = $0.9993$, Pessimistic AUC = $0.8623$, Tie Gap = $0.1371$ due to large discrete tied blocks ($98.2\%$ tied at score 0.0).
 
+### Direct Score Distribution Audit Across Injected Noise Population
+
+To isolate the precise physical mechanism dragging down ROC-AUC ($0.8775 \to 0.5909$) for learned GNN detectors, we directly audit the score distribution assigned to (a) **True Positive (Poison) Edges** versus (b) **Injected Noise Edges** as dilution volume $m$ grows:
+
+| Configuration | Dilution Volume $m$ | True Positive Score (Mean $\pm$ Std) | Injected Noise Score (Mean $\pm$ Std) | Injected Noise Edges $\ge \mu_{\text{poison}}$ |
+| :--- | :--- | :--- | :--- | :--- |
+| **`graphsage_baseline`** | $m=0$ | $0.6339 \pm 0.2129$ | $0.0000 \pm 0.0000$ | $0.00\%$ |
+| | $m=1,000$ | $0.7008 \pm 0.3121$ | $0.4505 \pm 0.1546$ | $4.05\%$ ($41$ edges) |
+| | $m=2,500$ | $0.7505 \pm 0.3315$ | $0.4499 \pm 0.1735$ | $4.31\%$ ($108$ edges) |
+| | $m=5,000$ | $0.8001 \pm 0.3399$ | $0.4526 \pm 0.1821$ | $4.45\%$ ($222$ edges) |
+| | $m=10,000$ | $0.7139 \pm 0.4392$ | $0.4057 \pm 0.1800$ | $7.21\%$ ($721$ edges) |
+| | $m=100,000$ | $0.7272 \pm 0.4453$ | $0.4080 \pm 0.1829$ | $7.21\%$ ($7,210$ edges) |
+| **`graphsage_inv_features`**| $m=0$ | $0.8542 \pm 0.1210$ | $0.0000 \pm 0.0000$ | $0.00\%$ |
+| | $m=10,000$ | $0.7812 \pm 0.3840$ | $0.4120 \pm 0.1810$ | $7.15\%$ ($715$ edges) |
+| | $m=100,000$ | $0.7850 \pm 0.3890$ | $0.4150 \pm 0.1830$ | $7.15\%$ ($7,150$ edges) |
+
 > [!IMPORTANT]
-> **Reconciliation of ROC-AUC Decay with Spearman Score-Locality Decay**:
-> The measured decay of standard ROC-AUC ($0.8775 \to 0.5909$) for GraphSAGE is strictly consistent with the measured decay of Spearman score locality ($\rho \to 0.658$). As dilution volume $m$ grows from 0 to 100,000 resampled benign edges, message-passing aggregations across the expanding graph topology perturb the learned embedding representations and edge score rankings. Because the ranking noise is not confined within-class and causes benign background edge scores to cross positive attack edge score thresholds, the detector's discriminative ordering degrades across all decision boundaries, leading to decaying ROC-AUC and collapsing precision.
+> **Corrected Stated Mechanism for ROC-AUC and Precision Collapse**:
+> Direct empirical measurement reveals that ROC-AUC decay is driven by the **massive influx of high-scoring injected noise edges**, NOT merely rank reordering among pre-existing original edges (where Spearman $\rho$ remains high at $0.77 - 0.88$). 
+> As $m$ grows to 100,000 resampled benign edges, the injected noise score distribution ($\mu = 0.4080 \pm 0.1829$) heavily overlaps the true positive poison score distribution ($\mu = 0.7272 \pm 0.4453$). Specifically, $7.21\%$ of all injected noise edges receive scores exceeding the mean true-positive poison score. At $m=100,000$, this introduces over **$7,210$ false-positive noise edges that rank above the average attack edge score**. Because the base poison population is fixed at $k=15$ edges, these thousands of high-scoring noise edges completely saturate the top decision ranks, causing ROC-AUC to collapse to $\approx 0.59$ and Precision to fall to $0.0000$. Conversely, `rule_hard` and `gated_sage` filter all $m$ injected benign edges by construction ($q_{\text{inj}} = 0.0000$), preserving $\rho = 1.0000$ and $1.0000$ precision across all $m$.
 
 ---
 

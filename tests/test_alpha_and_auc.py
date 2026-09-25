@@ -97,3 +97,20 @@ def test_audit_auc_and_ties():
     assert audit.largest_tied_block_size == 2
     assert audit.is_all_edges is True
     assert audit.auc_optimistic >= audit.auc_pessimistic
+
+
+def test_score_locality_decay_graphsage_vs_gated():
+    """Verifies that GraphSAGE baseline exhibits score locality decay (rho < 1.0) while gated/rule detectors retain rho = 1.0."""
+    import json
+    from pathlib import Path
+
+    json_path = Path("results/score_locality_final.json")
+    if json_path.exists():
+        with open(json_path) as f:
+            locality_data = json.load(f)
+
+        assert locality_data["rule_hard"]["100000"] == 1.0
+        assert locality_data["gated_sage"]["100000"] == 1.0
+        assert locality_data["graphsage_baseline"]["100000"] < 1.0
+        assert locality_data["graphsage_inv_features"]["100000"] < 1.0
+

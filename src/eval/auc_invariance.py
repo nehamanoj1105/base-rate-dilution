@@ -20,6 +20,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any, Dict, List, Sequence, Set, Tuple, Union
 
+import copy
+
 import numpy as np
 from scipy.stats import spearmanr
 from sklearn.metrics import roc_auc_score
@@ -47,6 +49,14 @@ class TieStructureResult:
     auc_optimistic: float
     auc_pessimistic: float
     auc_tie_gap: float
+    tp: int = 0
+    fp: int = 0
+    fn: int = 0
+    tn: int = 0
+    operating_threshold: float = 0.5
+    precision: float = 0.0
+    recall: float = 0.0
+    f1: float = 0.0
     is_all_edges: bool = True
 
     def to_dict(self) -> Dict[str, Union[float, int, bool]]:
@@ -55,6 +65,14 @@ class TieStructureResult:
             "total_edges": self.total_edges,
             "num_positives": self.num_positives,
             "num_negatives": self.num_negatives,
+            "tp": self.tp,
+            "fp": self.fp,
+            "fn": self.fn,
+            "tn": self.tn,
+            "operating_threshold": round(float(self.operating_threshold), 6),
+            "precision": round(float(self.precision), 6),
+            "recall": round(float(self.recall), 6),
+            "f1": round(float(self.f1), 6),
             "modal_score": round(float(self.modal_score), 6),
             "modal_score_count": self.modal_score_count,
             "modal_score_fraction": round(float(self.modal_score_fraction), 6),
@@ -111,7 +129,9 @@ def compute_optimistic_pessimistic_auc(
 
 
 def audit_auc_and_ties(
-    scores: Dict[str, float], ground_truth_ids: Set[str]
+    scores: Dict[str, float],
+    ground_truth_ids: Set[str],
+    operating_threshold: float = 0.5,
 ) -> TieStructureResult:
     """
     Audits tie structure and computes standard, optimistic, and pessimistic ROC-AUC
@@ -120,6 +140,7 @@ def audit_auc_and_ties(
     Args:
         scores: Dict mapping edge_id to anomaly score float.
         ground_truth_ids: Set of positive ground truth edge_ids.
+        operating_threshold: Operating threshold float for raw counts.
 
     Returns:
         TieStructureResult dataclass containing full audit details.
@@ -149,6 +170,17 @@ def audit_auc_and_ties(
     num_pos = int(np.sum(y_true == 1))
     num_neg = int(np.sum(y_true == 0))
 
+    # Raw confusion matrix counts at operating_threshold
+    preds = (y_score >= operating_threshold).astype(int)
+    tp = int(np.sum((preds == 1) & (y_true == 1)))
+    fp = int(np.sum((preds == 1) & (y_true == 0)))
+    fn = int(np.sum((preds == 0) & (y_true == 1)))
+    tn = int(np.sum((preds == 0) & (y_true == 0)))
+
+    prec = tp / float(tp + fp) if (tp + fp) > 0 else 0.0
+    rec = tp / float(tp + fn) if (tp + fn) > 0 else 0.0
+    f1_val = 2.0 * prec * rec / (prec + rec) if (prec + rec) > 0 else 0.0
+
     # Tie analysis
     unique_scores, counts = np.unique(y_score, return_counts=True)
     max_count_idx = int(np.argmax(counts))
@@ -171,6 +203,14 @@ def audit_auc_and_ties(
         total_edges=total_edges,
         num_positives=num_pos,
         num_negatives=num_neg,
+        tp=tp,
+        fp=fp,
+        fn=fn,
+        tn=tn,
+        operating_threshold=operating_threshold,
+        precision=prec,
+        recall=rec,
+        f1=f1_val,
         modal_score=modal_score,
         modal_score_count=modal_score_count,
         modal_score_fraction=modal_score_fraction,
@@ -238,7 +278,10 @@ def measure_score_locality(
     s0_vec = np.array([s0_dict.get(eid, 0.0) for eid in base_edge_ids], dtype=float)
 
     results: Dict[int, float] = {}
-    current_g = g_m0
+    current_g = ProvenanceGraph(
+        nodes={k: copy.deepcopy(v) for k, v in g_m0.nodes.items()},
+        edges=[copy.deepcopy(e) for e in g_m0.edges],
+    )
     current_m = 0
 
     for m in m_grid:
@@ -252,7 +295,7 @@ def measure_score_locality(
             g_m = inject_mimicry_attack(g_m0, num_fake_edges=m, seed=seed)
         else:
             delta_m = m - current_m
-            current_g, _ = resampler.inject(current_g, m=delta_m, seed=seed + current_m)
+            resampler.inject_in_place(current_g, m=delta_m, seed=seed + current_m)
             current_m = m
             g_m = current_g
 

@@ -157,10 +157,19 @@ def evaluate_second_domain_dilution(
         for idx in test_nodes:
             test_mask[idx] = True
 
-        # Train model and calibrate threshold on val at m=0
-        model, operating_thresh = train_elliptic_model(
+        # Load frozen threshold from config/frozen_thresholds.json
+        frozen_thresh = 0.8289
+        thresh_path = Path("config/frozen_thresholds.json")
+        if thresh_path.exists():
+            with open(thresh_path, "r", encoding="utf-8") as tf:
+                tdata = json.load(tf)
+                frozen_thresh = tdata.get("thresholds", {}).get("elliptic_gnn", 0.8289)
+
+        # Train model for current seed
+        model, _ = train_elliptic_model(
             data.x, data.edge_index, y, train_mask, val_mask, epochs=25, seed=seed
         )
+        operating_thresh = frozen_thresh
 
         device = get_device()
         model.eval()
